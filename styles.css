@@ -144,53 +144,6 @@ main {
 .dot-note { background: var(--brass); }
 .dot-uncertain { background: var(--rust); }
 
-/* ===== Tree (nested outline / dropped pedigree) ===== */
-.tree-root { position: relative; }
-
-.tree-node { position: relative; }
-
-.tree-node > .person-row {
-  position: relative;
-  z-index: 1;
-}
-
-.tree-children {
-  position: relative;
-  margin-left: 22px;
-  padding-left: 22px;
-  border-left: 1px solid var(--line);
-}
-.tree-children[data-collapsed="true"] { display: none; }
-
-.tree-children .tree-node {
-  margin-top: 6px;
-}
-
-.person-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 10px;
-  padding: 9px 10px;
-  border-radius: var(--radius);
-  cursor: pointer;
-  background: transparent;
-  transition: background 120ms ease;
-}
-.person-row:hover { background: var(--ink-raised); }
-
-.caret {
-  flex: 0 0 auto;
-  width: 14px;
-  color: var(--brass-soft);
-  font-size: 11px;
-  transform: rotate(0deg);
-  transition: transform 140ms ease;
-  user-select: none;
-}
-.caret.is-leaf { color: var(--line); }
-.tree-node[data-open="true"] > .person-row .caret { transform: rotate(90deg); }
-
 .person-name {
   font-family: var(--font-display);
   font-weight: 500;
@@ -224,10 +177,190 @@ main {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  margin-left: 2px;
+  display: inline-block;
 }
 .flag-note { background: var(--brass); }
 .flag-uncertain { background: var(--rust); }
+
+/* ===== Tree: graphical pedigree chart ===== */
+.tree-scroll {
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 10px 4px 40px;
+  margin: 0 -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.tree-root {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.pnode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pbox-wrap {
+  position: relative;
+}
+
+.pbox {
+  --gen-color: var(--brass);
+  position: relative;
+  width: 168px;
+  background: var(--ink-raised);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gen-color);
+  border-radius: 6px;
+  padding: 10px 12px 14px;
+  cursor: pointer;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+.pbox:hover {
+  transform: translateY(-1px);
+  border-color: var(--gen-color);
+}
+.pbox .person-name {
+  display: block;
+  font-size: 14px;
+  line-height: 1.25;
+  white-space: normal;
+  margin-bottom: 2px;
+}
+.pbox .person-name .suffix {
+  display: block;
+  font-size: 10px;
+  margin: 0;
+}
+.pbox .person-meta {
+  display: block;
+  font-size: 10.5px;
+  white-space: normal;
+  color: var(--paper-dim);
+}
+.pbox .gen-tag {
+  display: block;
+  margin: 4px 0 0;
+  font-size: 9.5px;
+  color: var(--gen-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pbox .flags { position: absolute; top: 8px; right: 8px; display: flex; gap: 4px; }
+
+.ptoggle {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 2px solid var(--brass-soft);
+  color: var(--brass);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 120ms ease, color 120ms ease;
+}
+.ptoggle:hover {
+  background: var(--brass);
+  color: var(--ink);
+}
+.ptoggle[disabled] {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.pchildren {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 30px;
+}
+.pchildren[data-collapsed="true"] { display: none; }
+.pchildren::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 30px;
+  border-left: 2px solid var(--brass-soft);
+  transform: translateX(-1px);
+}
+
+.pmarriage {
+  position: absolute;
+  top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink);
+  border: 1px solid var(--line);
+  color: var(--paper-faint);
+  font-size: 9.5px;
+  white-space: nowrap;
+  padding: 2px 7px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.pchild {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 18px 0;
+  position: relative;
+}
+.pchild::before, .pchild::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 30px;
+  border-top: 2px solid var(--brass-soft);
+}
+.pchild::after {
+  right: auto;
+  left: 50%;
+  border-left: 2px solid var(--brass-soft);
+}
+.pchild:only-child::before,
+.pchild:only-child::after {
+  right: auto;
+  left: 50%;
+  width: 0;
+  border-top: none;
+  border-left: 2px solid var(--brass-soft);
+}
+.pchild:only-child::after { display: none; }
+.pchild:first-child::before { border: 0 none; }
+.pchild:last-child::after { border: 0 none; }
+.pchild:last-child::before {
+  border-right: 2px solid var(--brass-soft);
+  border-radius: 0 6px 0 0;
+}
+.pchild:first-child::after {
+  border-radius: 6px 0 0 0;
+}
+.pchild:only-child:first-child::after,
+.pchild:only-child:last-child::before {
+  border-radius: 0;
+}
+
+.pchild .pnode { margin-top: 0; }
 
 .no-parents-note {
   margin: 4px 0 0 36px;

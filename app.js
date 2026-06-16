@@ -61,21 +61,42 @@
 
   const treeRoot = document.getElementById("tree-root");
 
-  function buildTreeNode(id, path) {
+  const GEN_COLORS = ["#c08a3e", "#b97a7a", "#8f87b0", "#c2935f", "#9aab7a", "#9c8f6a"];
+
+  function genColor(depth) {
+    return GEN_COLORS[depth % GEN_COLORS.length];
+  }
+
+  function findMarriage(fatherId, motherId) {
+    const f = person(fatherId);
+    if (!f || !f.spouses) return null;
+    return f.spouses.find(s => s.spouseId === motherId) || null;
+  }
+
+  function buildBox(id, path) {
     const p = person(id);
-    const node = document.createElement("div");
-    node.className = "tree-node";
-    node.dataset.open = path.length < 2 ? "true" : "false";
+    const wrap = document.createElement("div");
+    wrap.className = "pbox-wrap";
 
-    const row = document.createElement("div");
-    row.className = "person-row";
+    const box = document.createElement("div");
+    box.className = "pbox";
+    box.style.setProperty("--gen-color", genColor(path.length));
 
-    const hasParents = p && (p.father || p.mother);
-
-    const caret = document.createElement("span");
-    caret.className = "caret" + (hasParents ? "" : " is-leaf");
-    caret.textContent = hasParents ? "\u25B8" : "\u2014";
-    row.appendChild(caret);
+    const flags = document.createElement("div");
+    flags.className = "flags";
+    if (p && hasNote(p)) {
+      const f = document.createElement("span");
+      f.className = "flag flag-note";
+      f.title = "Has a research note";
+      flags.appendChild(f);
+    }
+    if (p && hasUncertainSpouse(p)) {
+      const f = document.createElement("span");
+      f.className = "flag flag-uncertain";
+      f.title = "A date here is uncertain";
+      flags.appendChild(f);
+    }
+    box.appendChild(flags);
 
     const name = document.createElement("span");
     name.className = "person-name";
@@ -86,53 +107,81 @@
       suf.textContent = p.suffix;
       name.appendChild(suf);
     }
-    row.appendChild(name);
+    box.appendChild(name);
 
     if (p) {
-      if (hasNote(p)) {
-        const f = document.createElement("span");
-        f.className = "flag flag-note";
-        f.title = "Has a research note";
-        row.appendChild(f);
-      }
-      if (hasUncertainSpouse(p)) {
-        const f = document.createElement("span");
-        f.className = "flag flag-uncertain";
-        f.title = "A date here is uncertain";
-        row.appendChild(f);
-      }
-
       const meta = document.createElement("span");
       meta.className = "person-meta";
-      meta.textContent = lifespan(p) + (p.birthPlace ? " \u00b7 " + placeShort(p.birthPlace) : "");
-      row.appendChild(meta);
+      meta.textContent = lifespan(p);
+      box.appendChild(meta);
     }
 
     const genTag = document.createElement("span");
     genTag.className = "gen-tag";
     genTag.textContent = relationLabel(path);
-    row.appendChild(genTag);
+    box.appendChild(genTag);
 
-    row.addEventListener("click", (e) => {
-      openDetail(id);
-    });
+    box.addEventListener("click", () => openDetail(id));
+    wrap.appendChild(box);
+    return wrap;
+  }
 
-    node.appendChild(row);
+  function buildTreeNode(id, path) {
+    const p = person(id);
+    const node = document.createElement("div");
+    node.className = "tree-node pnode";
+
+    const hasParents = !!(p && (p.father || p.mother));
+    node.dataset.open = (hasParents && path.length < 2) ? "true" : "false";
+
+    const boxWrap = buildBox(id, path);
 
     if (hasParents) {
-      const childWrap = document.createElement("div");
-      childWrap.className = "tree-children";
-      childWrap.dataset.collapsed = path.length < 2 ? "false" : "true";
-
-      if (p.father) childWrap.appendChild(buildTreeNode(p.father, path.concat("f")));
-      if (p.mother) childWrap.appendChild(buildTreeNode(p.mother, path.concat("m")));
-
-      node.appendChild(childWrap);
-
-      caret.addEventListener("click", (e) => {
+      const toggle = document.createElement("button");
+      toggle.className = "ptoggle";
+      toggle.setAttribute("aria-label", "Expand or collapse ancestors");
+      toggle.textContent = node.dataset.open === "true" ? "\u2212" : "+";
+      toggle.addEventListener("click", (e) => {
         e.stopPropagation();
         toggleNode(node);
       });
+      boxWrap.appendChild(toggle);
+    }
+
+    node.appendChild(boxWrap);
+
+    if (hasParents) {
+      const childWrap = document.createElement("div");
+      childWrap.className = "pchildren";
+      childWrap.dataset.collapsed = node.dataset.open === "true" ? "false" : "true";
+
+      if (p.father) {
+        const fatherSlot = document.createElement("div");
+        fatherSlot.className = "pchild";
+        fatherSlot.appendChild(buildTreeNode(p.father, path.concat("f")));
+        childWrap.appendChild(fatherSlot);
+      }
+      if (p.mother) {
+        const motherSlot = document.createElement("div");
+        motherSlot.className = "pchild";
+        motherSlot.appendChild(buildTreeNode(p.mother, path.concat("m")));
+        childWrap.appendChild(motherSlot);
+      }
+
+      if (p.father && p.mother) {
+        const marr = findMarriage(p.father, p.mother);
+        if (marr && (marr.marriageDate || marr.marriagePlace)) {
+          const badge = document.createElement("span");
+          badge.className = "pmarriage";
+          let txt = "m. " + (marr.marriageDate ? shortDate(marr.marriageDate) : "?");
+          if (marr.uncertain) txt += " (uncertain)";
+          badge.textContent = txt;
+          badge.title = marr.marriagePlace || "";
+          childWrap.appendChild(badge);
+        }
+      }
+
+      node.appendChild(childWrap);
     }
 
     return node;
@@ -141,8 +190,10 @@
   function toggleNode(node, forceOpen) {
     const willOpen = forceOpen !== undefined ? forceOpen : node.dataset.open !== "true";
     node.dataset.open = willOpen ? "true" : "false";
-    const kids = node.querySelector(":scope > .tree-children");
+    const kids = node.querySelector(":scope > .pchildren");
     if (kids) kids.dataset.collapsed = willOpen ? "false" : "true";
+    const btn = node.querySelector(":scope > .pbox-wrap > .ptoggle");
+    if (btn) btn.textContent = willOpen ? "\u2212" : "+";
   }
 
   function renderTree() {

@@ -20,7 +20,8 @@ const FAMILY_DATA = {
     "familyId": "F11",
     "marriageDate": "9 Sep 2016",
     "marriagePlace": "Holmdel Township, Monmouth, New Jersey, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [],
@@ -47,7 +48,8 @@ const FAMILY_DATA = {
     "familyId": "F14",
     "marriageDate": "Abt 1969",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -74,7 +76,8 @@ const FAMILY_DATA = {
     "familyId": "F14",
     "marriageDate": "Abt 1969",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -103,7 +106,8 @@ const FAMILY_DATA = {
     "familyId": "F21",
     "marriageDate": "3 May 1945",
     "marriagePlace": "Coeur d'Alene, Kootenai, Idaho, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -131,7 +135,8 @@ const FAMILY_DATA = {
     "familyId": "F21",
     "marriageDate": "3 May 1945",
     "marriagePlace": "Coeur d'Alene, Kootenai, Idaho, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -161,7 +166,8 @@ const FAMILY_DATA = {
     "familyId": "F9",
     "marriageDate": "2 July 1944",
     "marriagePlace": "Navesink, New Jersey, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -189,7 +195,8 @@ const FAMILY_DATA = {
     "familyId": "F9",
     "marriageDate": "2 July 1944",
     "marriagePlace": "Navesink, New Jersey, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -219,7 +226,8 @@ const FAMILY_DATA = {
     "familyId": "F10",
     "marriageDate": "2 Dec 1908",
     "marriagePlace": "Henry, Missouri, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -247,7 +255,8 @@ const FAMILY_DATA = {
     "familyId": "F10",
     "marriageDate": "2 Dec 1908",
     "marriagePlace": "Henry, Missouri, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -275,7 +284,8 @@ const FAMILY_DATA = {
     "familyId": "F22",
     "marriageDate": "29 Aug 1911",
     "marriagePlace": "Duncan Home, Red Bank, NJ",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -308,7 +318,8 @@ const FAMILY_DATA = {
     "familyId": "F22",
     "marriageDate": "29 Aug 1911",
     "marriagePlace": "Duncan Home, Red Bank, NJ",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -339,7 +350,8 @@ const FAMILY_DATA = {
     "familyId": "F23",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -437,7 +449,8 @@ const FAMILY_DATA = {
     "familyId": "F5",
     "marriageDate": "1914",
     "marriagePlace": "New Jersey, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -464,7 +477,8 @@ const FAMILY_DATA = {
     "familyId": "F4",
     "marriageDate": "1891",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -491,7 +505,8 @@ const FAMILY_DATA = {
     "familyId": "F4",
     "marriageDate": "1891",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -520,7 +535,8 @@ const FAMILY_DATA = {
     "familyId": "F5",
     "marriageDate": "1914",
     "marriagePlace": "New Jersey, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -689,9 +705,9 @@ const FAMILY_DATA = {
   "suffix": null,
   "sex": "M",
   "birthDate": "22 Feb 1846",
-  "birthPlace": null,
+  "birthPlace": "Warren, Warren, Indiana, United States",
   "deathDate": "14 Feb 1922",
-  "deathPlace": null,
+  "deathPlace": "Clinton, Henry, Missouri, United States",
   "father": null,
   "mother": null,
   "spouses": [
@@ -700,7 +716,8 @@ const FAMILY_DATA = {
     "familyId": "F1",
     "marriageDate": "6 Feb 1873",
     "marriagePlace": "Daviess, Missouri, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -739,7 +756,8 @@ const FAMILY_DATA = {
     "familyId": "F1",
     "marriageDate": "6 Feb 1873",
     "marriagePlace": "Daviess, Missouri, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -778,7 +796,8 @@ const FAMILY_DATA = {
     "familyId": "F6",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -840,7 +859,8 @@ const FAMILY_DATA = {
     "familyId": "F8",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -887,7 +907,8 @@ const FAMILY_DATA = {
     "familyId": "F15",
     "marriageDate": "1881",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -920,7 +941,8 @@ const FAMILY_DATA = {
     "familyId": "F15",
     "marriageDate": "1881",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1019,7 +1041,8 @@ const FAMILY_DATA = {
     "familyId": "F13",
     "marriageDate": "1880",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1052,7 +1075,8 @@ const FAMILY_DATA = {
     "familyId": "F13",
     "marriageDate": "1880",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1151,9 +1175,10 @@ const FAMILY_DATA = {
    {
     "spouseId": "I252763350608",
     "familyId": "F17",
-    "marriageDate": "6 Apr 1913 or 30 Oct 1917 (uncertain, sources differ)",
+    "marriageDate": "6 Apr 1913",
     "marriagePlace": null,
-    "uncertain": true
+    "uncertain": true,
+    "altDate": "30 Oct 1917"
    }
   ],
   "children": [
@@ -1200,7 +1225,8 @@ const FAMILY_DATA = {
     "familyId": "F18",
     "marriageDate": "9 Dec 1883",
     "marriagePlace": "Oceanport, Monmouth, New Jersey",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1235,7 +1261,8 @@ const FAMILY_DATA = {
     "familyId": "F18",
     "marriageDate": "9 Dec 1883",
     "marriagePlace": "Oceanport, Monmouth, New Jersey",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1270,7 +1297,8 @@ const FAMILY_DATA = {
     "familyId": "F23",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1332,9 +1360,10 @@ const FAMILY_DATA = {
    {
     "spouseId": "I252763333359",
     "familyId": "F7",
-    "marriageDate": null,
-    "marriagePlace": null,
-    "uncertain": false
+    "marriageDate": "2 Dec 1908",
+    "marriagePlace": "Henry, Missouri, USA",
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1363,9 +1392,10 @@ const FAMILY_DATA = {
    {
     "spouseId": "I252763333358",
     "familyId": "F7",
-    "marriageDate": null,
-    "marriagePlace": null,
-    "uncertain": false
+    "marriageDate": "2 Dec 1908",
+    "marriagePlace": "Henry, Missouri, USA",
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1394,7 +1424,8 @@ const FAMILY_DATA = {
     "familyId": "F11",
     "marriageDate": "9 Sep 2016",
     "marriagePlace": "Holmdel Township, Monmouth, New Jersey, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [],
@@ -1436,7 +1467,8 @@ const FAMILY_DATA = {
     "familyId": "F2",
     "marriageDate": "1941",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1467,7 +1499,8 @@ const FAMILY_DATA = {
     "familyId": "F2",
     "marriageDate": "1941",
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1564,7 +1597,8 @@ const FAMILY_DATA = {
     "familyId": "F_BARNES",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [],
@@ -1606,7 +1640,8 @@ const FAMILY_DATA = {
     "familyId": "F16",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1633,7 +1668,8 @@ const FAMILY_DATA = {
     "familyId": "F16",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1658,9 +1694,10 @@ const FAMILY_DATA = {
    {
     "spouseId": "I252763327744",
     "familyId": "F17",
-    "marriageDate": "6 Apr 1913 or 30 Oct 1917 (uncertain, sources differ)",
+    "marriageDate": "6 Apr 1913",
     "marriagePlace": null,
-    "uncertain": true
+    "uncertain": true,
+    "altDate": "30 Oct 1917"
    }
   ],
   "children": [
@@ -1843,7 +1880,8 @@ const FAMILY_DATA = {
     "familyId": "F3",
     "marriageDate": "09 Jul 1842",
     "marriagePlace": "Clinton County, Ohio, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1876,14 +1914,16 @@ const FAMILY_DATA = {
     "familyId": "F3",
     "marriageDate": "09 Jul 1842",
     "marriagePlace": "Clinton County, Ohio, USA",
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    },
    {
     "spouseId": null,
     "familyId": "F24",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -1930,9 +1970,10 @@ const FAMILY_DATA = {
    {
     "spouseId": "I252763574065",
     "familyId": "F20",
-    "marriageDate": "1877 or 17 Dec 1885 (uncertain, sources differ)",
+    "marriageDate": "1877",
     "marriagePlace": null,
-    "uncertain": true
+    "uncertain": true,
+    "altDate": "17 Dec 1885"
    }
   ],
   "children": [
@@ -1964,9 +2005,10 @@ const FAMILY_DATA = {
    {
     "spouseId": "I252763574064",
     "familyId": "F20",
-    "marriageDate": "1877 or 17 Dec 1885 (uncertain, sources differ)",
+    "marriageDate": "1877",
     "marriagePlace": null,
-    "uncertain": true
+    "uncertain": true,
+    "altDate": "17 Dec 1885"
    }
   ],
   "children": [
@@ -2151,7 +2193,8 @@ const FAMILY_DATA = {
     "familyId": "F8",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -2181,7 +2224,8 @@ const FAMILY_DATA = {
     "familyId": "F6",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [
@@ -2243,7 +2287,8 @@ const FAMILY_DATA = {
     "familyId": "F_BARNES",
     "marriageDate": null,
     "marriagePlace": null,
-    "uncertain": false
+    "uncertain": false,
+    "altDate": null
    }
   ],
   "children": [],
@@ -2362,8 +2407,13 @@ const FAMILY_DATA = {
    "I252763346222",
    "I252763333357"
   ],
-  "marr": [],
-  "note": null
+  "marr": [
+   {
+    "date": "2 Dec 1908",
+    "plac": "Henry, Missouri, USA"
+   }
+  ],
+  "note": "Marriage date and place (2 Dec 1908, Henry, Missouri) came from the official Ancestry chart export, not the GEDCOM file, which had no marriage record for this couple at all."
  },
  "F8": {
   "id": "F8",
@@ -2498,8 +2548,9 @@ const FAMILY_DATA = {
   ],
   "marr": [
    {
-    "date": "6 Apr 1913 or 30 Oct 1917 (uncertain, sources differ)",
+    "date": "6 Apr 1913",
     "plac": null,
+    "altDate": "30 Oct 1917",
     "uncertain": true
    }
   ],
@@ -2540,8 +2591,9 @@ const FAMILY_DATA = {
   ],
   "marr": [
    {
-    "date": "1877 or 17 Dec 1885 (uncertain, sources differ)",
+    "date": "1877",
     "plac": null,
+    "altDate": "17 Dec 1885",
     "uncertain": true
    }
   ],
