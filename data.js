@@ -53,7 +53,7 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206391@"
+   "I252763206391"
   ],
   "note": null
  },
@@ -81,7 +81,7 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206391@"
+   "I252763206391"
   ],
   "note": null
  },
@@ -111,8 +111,8 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206466@",
-   "@I252763332561@"
+   "I252763206466",
+   "I252763332561"
   ],
   "note": null
  },
@@ -140,8 +140,8 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206466@",
-   "@I252763332561@"
+   "I252763206466",
+   "I252763332561"
   ],
   "note": null
  },
@@ -171,8 +171,8 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206513@",
-   "@I252763207059@"
+   "I252763206513",
+   "I252763207059"
   ],
   "note": null
  },
@@ -200,8 +200,8 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206513@",
-   "@I252763207059@"
+   "I252763206513",
+   "I252763207059"
   ],
   "note": null
  },
@@ -231,8 +231,8 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763210472@",
-   "@I252763206536@"
+   "I252763210472",
+   "I252763206536"
   ],
   "note": null
  },
@@ -260,8 +260,8 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763210472@",
-   "@I252763206536@"
+   "I252763210472",
+   "I252763206536"
   ],
   "note": null
  },
@@ -289,11 +289,11 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763207209@",
-   "@I252763207207@",
-   "@I252763206634@",
-   "@I252763207206@",
-   "@I252763207208@"
+   "I252763207209",
+   "I252763207207",
+   "I252763206634",
+   "I252763207206",
+   "I252763207208"
   ],
   "note": "Two Ancestry record entries for Holmes Cleveland Crawford (with two different sets of parents) were merged into this one profile. The version below, son of Franklin Everett Crawford and Alvira Emmons, was kept; the alternate version (son of a 'Charles Frederick Duncan' and 'Alvira Crawford') was dropped, since that branch shared an identical, almost certainly duplicated, death record with Franklin Everett Crawford."
  },
@@ -323,11 +323,11 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763207209@",
-   "@I252763207207@",
-   "@I252763206634@",
-   "@I252763207206@",
-   "@I252763207208@"
+   "I252763207209",
+   "I252763207207",
+   "I252763206634",
+   "I252763207206",
+   "I252763207208"
   ],
   "note": null
  },
@@ -355,10 +355,10 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763348450@",
-   "@I252763348451@",
-   "@I252763348452@",
-   "@I252763348453@"
+   "I252763348450",
+   "I252763348451",
+   "I252763348452",
+   "I252763348453"
   ],
   "note": null
  },
@@ -454,7 +454,7 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206649@"
+   "I252763206649"
   ],
   "note": "Recorded once under the German form of his name, Wilhelm Spengeman, alongside the anglicized William."
  },
@@ -482,7 +482,7 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763209567@"
+   "I252763209567"
   ],
   "note": "Family history holds that the surname was originally spelled von Spengemann before the family's immigration from Germany. Arrival in the U.S. is recorded as 1883 or 1884."
  },
@@ -510,7 +510,7 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763209567@"
+   "I252763209567"
   ],
   "note": null
  },
@@ -540,7 +540,7 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206649@"
+   "I252763206649"
   ],
   "note": null
  },
@@ -721,17 +721,17 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763210468@",
-   "@I252763571040@",
-   "@I252763210467@",
-   "@I252763210466@",
-   "@I252763210465@",
-   "@I252763210464@",
-   "@I252763210463@",
-   "@I252763210461@",
-   "@I252763210462@",
-   "@I252763206686@",
-   "@I252763210469@"
+   "I252763210468",
+   "I252763571040",
+   "I252763210467",
+   "I252763210466",
+   "I252763210465",
+   "I252763210464",
+   "I252763210463",
+   "I252763210461",
+   "I252763210462",
+   "I252763206686",
+   "I252763210469"
   ],
   "note": "Records disagree on the exact birth and death dates: birth as either 22 Feb 1846 or 23 Feb 1847, death as either 14 Feb or 15 Feb 1922. This site uses 22 Feb 1846 and 14 Feb 1922."
  },
@@ -761,17 +761,17 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763210468@",
-   "@I252763571040@",
-   "@I252763210467@",
-   "@I252763210466@",
-   "@I252763210465@",
-   "@I252763210464@",
-   "@I252763210463@",
-   "@I252763210461@",
-   "@I252763210462@",
-   "@I252763206686@",
-   "@I252763210469@"
+   "I252763210468",
+   "I252763571040",
+   "I252763210467",
+   "I252763210466",
+   "I252763210465",
+   "I252763210464",
+   "I252763210463",
+   "I252763210461",
+   "I252763210462",
+   "I252763206686",
+   "I252763210469"
   ],
   "note": null
  },
@@ -801,8 +801,8 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252766481279@",
-   "@I252766481278@"
+   "I252766481279",
+   "I252766481278"
   ],
   "note": null
  },
@@ -864,10 +864,10 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252766481146@",
-   "@I252766481147@",
-   "@I252766481148@",
-   "@I252766481149@"
+   "I252766481146",
+   "I252766481147",
+   "I252766481148",
+   "I252766481149"
   ],
   "note": null
  },
@@ -912,11 +912,11 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763326710@",
-   "@I252763326711@",
-   "@I252763209647@",
-   "@I252763326709@",
-   "@I252763326708@"
+   "I252763326710",
+   "I252763326711",
+   "I252763209647",
+   "I252763326709",
+   "I252763326708"
   ],
   "note": null
  },
@@ -946,11 +946,11 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763326710@",
-   "@I252763326711@",
-   "@I252763209647@",
-   "@I252763326709@",
-   "@I252763326708@"
+   "I252763326710",
+   "I252763326711",
+   "I252763209647",
+   "I252763326709",
+   "I252763326708"
   ],
   "note": null
  },
@@ -1046,11 +1046,11 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763327089@",
-   "@I252763327088@",
-   "@I252763327086@",
-   "@I252763206878@",
-   "@I252763327087@"
+   "I252763327089",
+   "I252763327088",
+   "I252763327086",
+   "I252763206878",
+   "I252763327087"
   ],
   "note": null
  },
@@ -1080,11 +1080,11 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763327089@",
-   "@I252763327088@",
-   "@I252763327086@",
-   "@I252763206878@",
-   "@I252763327087@"
+   "I252763327089",
+   "I252763327088",
+   "I252763327086",
+   "I252763206878",
+   "I252763327087"
   ],
   "note": null
  },
@@ -1182,10 +1182,10 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763350610@",
-   "@I252763350611@",
-   "@I252763350612@",
-   "@I252763350609@"
+   "I252763350610",
+   "I252763350611",
+   "I252763350612",
+   "I252763350609"
   ],
   "note": null
  },
@@ -1230,13 +1230,13 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763327742@",
-   "@I252763327741@",
-   "@I252763327745@",
-   "@I252763206879@",
-   "@I252763327744@",
-   "@I252763327740@",
-   "@I252763327739@"
+   "I252763327742",
+   "I252763327741",
+   "I252763327745",
+   "I252763206879",
+   "I252763327744",
+   "I252763327740",
+   "I252763327739"
   ],
   "note": "Recorded once with a set of parents under the surname Crawford rather than Duncan (see family F16 note). Kept as documented, but this profile's own surname (Duncan) is used for display, since that is how he, his marriage, and all his children were consistently recorded elsewhere."
  },
@@ -1266,13 +1266,13 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763327742@",
-   "@I252763327741@",
-   "@I252763327745@",
-   "@I252763206879@",
-   "@I252763327744@",
-   "@I252763327740@",
-   "@I252763327739@"
+   "I252763327742",
+   "I252763327741",
+   "I252763327745",
+   "I252763206879",
+   "I252763327744",
+   "I252763327740",
+   "I252763327739"
   ],
   "note": null
  },
@@ -1302,10 +1302,10 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763348450@",
-   "@I252763348451@",
-   "@I252763348452@",
-   "@I252763348453@"
+   "I252763348450",
+   "I252763348451",
+   "I252763348452",
+   "I252763348453"
   ],
   "note": "Sandra's four children (Jeremy, Justin, Susan Eliza, and Sara Marie) were all born with the surname Spengeman. Sara Marie later took the surname Barnes upon marrying Edward Barnes; the other three kept Spengeman."
  },
@@ -1367,9 +1367,9 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206558@",
-   "@I252763346222@",
-   "@I252763333357@"
+   "I252763206558",
+   "I252763346222",
+   "I252763333357"
   ],
   "note": "Originally recorded as Nikola Pacuk on arrival from Galicia (then part of Austria-Hungary, a region straddling present-day Poland and Ukraine). The surname was anglicized to Packet sometime after immigration."
  },
@@ -1399,9 +1399,9 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763206558@",
-   "@I252763346222@",
-   "@I252763333357@"
+   "I252763206558",
+   "I252763346222",
+   "I252763333357"
   ],
   "note": "Recorded on her 1912 Hamburg passenger manifest under the name Tekiena, with 'Anna' used afterward. Maiden name Michaluk; remembered in family stories under a different spelling, 'Mehawik.'"
  },
@@ -1472,9 +1472,9 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763348271@",
-   "@I252763327861@",
-   "@I252763348272@"
+   "I252763348271",
+   "I252763327861",
+   "I252763348272"
   ],
   "note": null
  },
@@ -1504,9 +1504,9 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763348271@",
-   "@I252763327861@",
-   "@I252763348272@"
+   "I252763348271",
+   "I252763327861",
+   "I252763348272"
   ],
   "note": null
  },
@@ -1549,7 +1549,7 @@ const FAMILY_DATA = {
   "given": "Jeremy Taylor",
   "birthSurname": "Spengeman",
   "marriedSurnames": [],
-  "suffix": "Male",
+  "suffix": null,
   "sex": null,
   "birthDate": null,
   "birthPlace": null,
@@ -1566,7 +1566,7 @@ const FAMILY_DATA = {
   "given": "Justin Daniel",
   "birthSurname": "Spengeman",
   "marriedSurnames": [],
-  "suffix": "Male",
+  "suffix": null,
   "sex": null,
   "birthDate": null,
   "birthPlace": null,
@@ -1583,7 +1583,7 @@ const FAMILY_DATA = {
   "given": "Sara Marie",
   "birthSurname": "Spengeman",
   "marriedSurnames": [],
-  "suffix": "Female",
+  "suffix": null,
   "sex": null,
   "birthDate": null,
   "birthPlace": null,
@@ -1609,7 +1609,7 @@ const FAMILY_DATA = {
   "given": "Susan Eliza",
   "birthSurname": "Spengeman",
   "marriedSurnames": [],
-  "suffix": "Female",
+  "suffix": null,
   "sex": null,
   "birthDate": null,
   "birthPlace": null,
@@ -1645,7 +1645,7 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763327746@"
+   "I252763327746"
   ],
   "note": null
  },
@@ -1673,7 +1673,7 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763327746@"
+   "I252763327746"
   ],
   "note": null
  },
@@ -1701,10 +1701,10 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763350610@",
-   "@I252763350611@",
-   "@I252763350612@",
-   "@I252763350609@"
+   "I252763350610",
+   "I252763350611",
+   "I252763350612",
+   "I252763350609"
   ],
   "note": null
  },
@@ -1885,11 +1885,11 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763571036@",
-   "@I252763571033@",
-   "@I252763571032@",
-   "@I252763210471@",
-   "@I252763571035@"
+   "I252763571036",
+   "I252763571033",
+   "I252763571032",
+   "I252763210471",
+   "I252763571035"
   ],
   "note": null
  },
@@ -1927,12 +1927,12 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763571036@",
-   "@I252763571033@",
-   "@I252763571032@",
-   "@I252763210471@",
-   "@I252763571035@",
-   "@I252763571037@"
+   "I252763571036",
+   "I252763571033",
+   "I252763571032",
+   "I252763210471",
+   "I252763571035",
+   "I252763571037"
   ],
   "note": null
  },
@@ -1977,12 +1977,12 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763574231@",
-   "@I252763574232@",
-   "@I252763574348@",
-   "@I252763574233@",
-   "@I252763574347@",
-   "@I252763206699@"
+   "I252763574231",
+   "I252763574232",
+   "I252763574348",
+   "I252763574233",
+   "I252763574347",
+   "I252763206699"
   ],
   "note": null
  },
@@ -2012,12 +2012,12 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252763574231@",
-   "@I252763574232@",
-   "@I252763574348@",
-   "@I252763574233@",
-   "@I252763574347@",
-   "@I252763206699@"
+   "I252763574231",
+   "I252763574232",
+   "I252763574348",
+   "I252763574233",
+   "I252763574347",
+   "I252763206699"
   ],
   "note": null
  },
@@ -2198,10 +2198,10 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252766481146@",
-   "@I252766481147@",
-   "@I252766481148@",
-   "@I252766481149@"
+   "I252766481146",
+   "I252766481147",
+   "I252766481148",
+   "I252766481149"
   ],
   "note": null
  },
@@ -2210,7 +2210,7 @@ const FAMILY_DATA = {
   "given": "Earl Taylor",
   "birthSurname": "Boyd",
   "marriedSurnames": [],
-  "suffix": "1.5.1.5.4",
+  "suffix": null,
   "sex": "M",
   "birthDate": "18 Dec 1905",
   "birthPlace": "Missouri",
@@ -2229,8 +2229,8 @@ const FAMILY_DATA = {
    }
   ],
   "children": [
-   "@I252766481279@",
-   "@I252766481278@"
+   "I252766481279",
+   "I252766481278"
   ],
   "note": null
  },
@@ -2239,7 +2239,7 @@ const FAMILY_DATA = {
   "given": "Arthur Earl",
   "birthSurname": "Boyd",
   "marriedSurnames": [],
-  "suffix": "1.5.1.5.4.2",
+  "suffix": null,
   "sex": "M",
   "birthDate": "22 Aug 1927",
   "birthPlace": "Clinton, Henry County, Missouri",
@@ -2256,7 +2256,7 @@ const FAMILY_DATA = {
   "given": "Mollie L",
   "birthSurname": "Boyd",
   "marriedSurnames": [],
-  "suffix": "1.5.1.5.4.1",
+  "suffix": null,
   "sex": "F",
   "birthDate": "abt 1926",
   "birthPlace": "Missouri",

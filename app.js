@@ -57,6 +57,148 @@
     return side + " " + noun;
   }
 
+  // ---------- general relationship-to-Daniel calculator (covers the whole directory) ----------
+
+  function ancestorDistances(startId) {
+    const dist = {};
+    const queue = [[startId, 0]];
+    while (queue.length) {
+      const [id, d] = queue.shift();
+      if (dist[id] !== undefined && dist[id] <= d) continue;
+      dist[id] = d;
+      const p = person(id);
+      if (!p) continue;
+      if (p.father) queue.push([p.father, d + 1]);
+      if (p.mother) queue.push([p.mother, d + 1]);
+    }
+    return dist;
+  }
+
+  function findPathDown(fromId, toId) {
+    if (fromId === toId) return [];
+    const p = person(fromId);
+    if (!p) return null;
+    if (p.father) {
+      const r = findPathDown(p.father, toId);
+      if (r) return ["f"].concat(r);
+    }
+    if (p.mother) {
+      const r = findPathDown(p.mother, toId);
+      if (r) return ["m"].concat(r);
+    }
+    return null;
+  }
+
+  function ordinal(n) {
+    const s = ["th", "st", "nd", "rd"], v = n % 100;
+    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+  }
+
+  const DANIEL_ANCESTORS = ancestorDistances(ROOT_ID);
+
+  function bloodRelationToDaniel(targetId) {
+    if (targetId === ROOT_ID) return "Daniel";
+    const targetDist = ancestorDistances(targetId);
+    let best = null;
+    Object.keys(DANIEL_ANCESTORS).forEach(ancId => {
+      if (targetDist[ancId] !== undefined) {
+        const A = DANIEL_ANCESTORS[ancId], B = targetDist[ancId];
+        if (!best || (A + B) < (best.A + best.B)) best = { ancId, A, B };
+      }
+    });
+    if (!best) return null;
+    const { A, B } = best;
+    const tp = person(targetId);
+
+    if (B === 0) {
+      const path = findPathDown(ROOT_ID, targetId);
+      return "Daniel's " + relationLabel(path || []);
+    }
+    if (A === 0) return null; // Daniel has no descendants in this tree yet
+
+    if (A === 1 && B === 1) {
+      const dp = person(ROOT_ID);
+      const full = dp.father && dp.father === tp.father && dp.mother && dp.mother === tp.mother;
+      const word = tp.sex === "M" ? "brother" : tp.sex === "F" ? "sister" : "sibling";
+      return "Daniel's " + (full ? word : "half-" + word);
+    }
+
+    const m = Math.min(A, B), n = Math.max(A, B);
+    if (m === 1) {
+      const level = n - 2;
+      const greatPrefix = level > 0 ? "great-".repeat(level) : "";
+      if (A < B) {
+        const word = tp.sex === "M" ? "nephew" : tp.sex === "F" ? "niece" : "nephew/niece";
+        return "Daniel's " + greatPrefix + word;
+      }
+      const word = tp.sex === "M" ? "uncle" : tp.sex === "F" ? "aunt" : "aunt/uncle";
+      return "Daniel's " + greatPrefix + word;
+    }
+
+    const degree = m - 1, removed = n - m;
+    let label = ordinal(degree) + " cousin";
+    if (removed > 0) label += ", " + ordinal(removed) + " removed";
+    return "Daniel's " + label;
+  }
+
+  function siblingsOf(id) {
+    const p = person(id);
+    if (!p) return [];
+    const out = new Set();
+    [p.father, p.mother].forEach(parentId => {
+      const parent = person(parentId);
+      if (parent) (parent.children || []).forEach(cid => { if (cid !== id) out.add(cid); });
+    });
+    return Array.from(out);
+  }
+
+  function reverseHopWord(hopType, earlierPerson) {
+    const sex = earlierPerson ? earlierPerson.sex : null;
+    if (hopType === "spouse") return sex === "F" ? "wife" : sex === "M" ? "husband" : "spouse";
+    if (hopType === "child") return sex === "F" ? "mother" : sex === "M" ? "father" : "parent";
+    if (hopType === "parent") return sex === "F" ? "daughter" : sex === "M" ? "son" : "child";
+    if (hopType === "sibling") return sex === "F" ? "sister" : sex === "M" ? "brother" : "sibling";
+    return "relative";
+  }
+
+  function relationshipToDaniel(targetId) {
+    const direct = bloodRelationToDaniel(targetId);
+    if (direct) return direct;
+
+    // BFS through spouse / parent / child / sibling edges to the nearest blood-connected relative
+    const visited = new Set([targetId]);
+    const queue = [[targetId, []]];
+    while (queue.length) {
+      const [curId, path] = queue.shift();
+      const p = person(curId);
+      if (!p) continue;
+      const neighbors = [];
+      (p.spouses || []).forEach(s => neighbors.push({ type: "spouse", id: s.spouseId }));
+      (p.children || []).forEach(cid => neighbors.push({ type: "child", id: cid }));
+      if (p.father) neighbors.push({ type: "parent", id: p.father });
+      if (p.mother) neighbors.push({ type: "parent", id: p.mother });
+      siblingsOf(curId).forEach(sid => neighbors.push({ type: "sibling", id: sid }));
+
+      for (const nb of neighbors) {
+        if (visited.has(nb.id) || !person(nb.id)) continue;
+        visited.add(nb.id);
+        const newPath = path.concat([{ type: nb.type, fromId: curId, toId: nb.id }]);
+        const rel = bloodRelationToDaniel(nb.id);
+        if (rel) {
+          let result = rel;
+          for (let i = newPath.length - 1; i >= 0; i--) {
+            const hop = newPath[i];
+            const earlier = person(hop.fromId);
+            result += "'s " + reverseHopWord(hop.type, earlier);
+          }
+          return result;
+        }
+        queue.push([nb.id, newPath]);
+      }
+    }
+    return "Related by marriage";
+  }
+
   // ---------- TREE VIEW ----------
 
   const treeRoot = document.getElementById("tree-root");
@@ -118,7 +260,7 @@
 
     const genTag = document.createElement("span");
     genTag.className = "gen-tag";
-    genTag.textContent = relationLabel(path);
+    genTag.textContent = path.length === 0 ? "this is daniel" : relationLabel(path);
     box.appendChild(genTag);
 
     box.addEventListener("click", () => openDetail(id));
@@ -277,19 +419,28 @@
         const p = PEOPLE[id];
         const row = document.createElement("div");
         row.className = "directory-row";
+        const top = document.createElement("div");
+        top.className = "directory-row-top";
         const name = document.createElement("span");
         name.className = "person-name";
         name.textContent = fullName(p) + (p.suffix ? " " + p.suffix : "");
         const meta = document.createElement("span");
         meta.className = "person-meta";
         meta.textContent = lifespan(p);
-        row.appendChild(name);
-        row.appendChild(meta);
+        top.appendChild(name);
+        top.appendChild(meta);
         if (hasNote(p)) {
           const f = document.createElement("span");
           f.className = "flag flag-note";
-          row.appendChild(f);
+          top.appendChild(f);
         }
+        row.appendChild(top);
+
+        const rel = document.createElement("span");
+        rel.className = "relation-badge" + (id === ROOT_ID ? " relation-badge-self" : "");
+        rel.textContent = id === ROOT_ID ? "This is Daniel" : relationshipToDaniel(id);
+        row.appendChild(rel);
+
         row.addEventListener("click", () => openDetail(id));
         list.appendChild(row);
       });

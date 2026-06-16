@@ -243,12 +243,16 @@ main {
   color: var(--paper-dim);
 }
 .pbox .gen-tag {
-  display: block;
-  margin: 4px 0 0;
+  display: inline-block;
+  margin: 6px 0 0;
   font-size: 9.5px;
-  color: var(--gen-color);
+  font-weight: 500;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  color: var(--ink);
+  background: var(--gen-color);
+  padding: 2px 7px;
+  border-radius: 3px;
 }
 .pbox .flags { position: absolute; top: 8px; right: 8px; display: flex; gap: 4px; }
 
@@ -399,13 +403,32 @@ main {
 .branch-list { display: flex; flex-direction: column; }
 .directory-row {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
-  padding: 8px 4px;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 4px;
   border-bottom: 1px solid var(--line-soft);
   cursor: pointer;
 }
+.directory-row-top {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
 .directory-row:hover .person-name { color: var(--brass); }
+.relation-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  background: var(--brass);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.relation-badge-self {
+  background: var(--paper);
+}
 .directory-empty {
   color: var(--paper-faint);
   font-style: italic;
