@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Spengeman Family Tree</title>
+<meta name="description" content="An interactive family tree for the Spengeman, Crawford, Duncan, Packet, McNutt and Ford families, built from census, immigration and vital records.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="eyebrow">six generations &middot; three countries &middot; one family</p>
+    <h1 class="site-title">The Spengeman Family Tree</h1>
+    <p class="site-sub">Reconstructed from census records, ship manifests, marriage indexes and death certificates &mdash; with every gap and disagreement in the record left in plain sight.</p>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="Site sections">
+    <button class="tab" data-view="tree" role="tab" aria-selected="true">Tree</button>
+    <button class="tab" data-view="directory" role="tab" aria-selected="false">Directory</button>
+    <button class="tab" data-view="notes" role="tab" aria-selected="false">Research Notes</button>
+  </nav>
+</header>
+
+<main>
+  <section id="view-tree" class="view" data-active="true">
+    <div class="tree-controls">
+      <button id="expand-all" class="ghost-btn">Expand all</button>
+      <button id="collapse-all" class="ghost-btn">Collapse all</button>
+      <span class="legend">
+        <span class="legend-item"><span class="dot dot-note"></span> has a research note</span>
+        <span class="legend-item"><span class="dot dot-uncertain"></span> date uncertain</span>
+      </span>
+    </div>
+    <div id="tree-root" class="tree-root"></div>
+  </section>
+
+  <section id="view-directory" class="view" data-active="false">
+    <div class="directory-controls">
+      <input id="search-input" type="text" placeholder="Search the family by name&hellip;" autocomplete="off">
+    </div>
+    <div id="directory-root" class="directory-root"></div>
+  </section>
+
+  <section id="view-notes" class="view" data-active="false">
+    <article id="notes-root" class="notes-root"></article>
+  </section>
+</main>
+
+<div id="detail-panel" class="detail-panel" aria-hidden="true">
+  <div class="detail-backdrop"></div>
+  <div class="detail-card" role="dialog" aria-modal="true" aria-labelledby="detail-name">
+    <button class="detail-close" aria-label="Close">&times;</button>
+    <div id="detail-content"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>Built from a GEDCOM export and a hand-drawn family chart, reconciled line by line. Last updated by hand &mdash; if something here is wrong, it's fixable.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
