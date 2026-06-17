@@ -32,13 +32,6 @@
     return m ? parseInt(m[1], 10) : null;
   }
 
-  function placeShort(place) {
-    if (!place) return "";
-    const parts = place.split(",").map(s => s.trim());
-    if (parts.length <= 2) return place;
-    return parts[0] + ", " + parts[parts.length - 2];
-  }
-
   function hasNote(p) { return !!p.note; }
   function hasUncertainSpouse(p) {
     return p.spouses && p.spouses.some(s => s.uncertain);
@@ -402,7 +395,7 @@
           let txt = "m. " + (marr.marriageDate ? shortDate(marr.marriageDate) : "?");
           if (marr.uncertain) txt += " (uncertain)";
           badge.textContent = txt;
-          badge.title = marr.marriagePlace || "";
+          badge.title = marr.marriagePlaceClean || "";
           childWrap.appendChild(badge);
         }
       }
@@ -553,7 +546,7 @@
     const sp = person(s.spouseId);
     let line = sp ? fullName(sp) : "Unknown";
     if (s.marriageDate) line += " \u2014 m. " + shortDate(s.marriageDate);
-    if (s.marriagePlace) line += ", " + placeShort(s.marriagePlace);
+    if (s.marriagePlaceClean) line += ", " + s.marriagePlaceClean;
     return line;
   }
 
@@ -566,8 +559,8 @@
     html += `<p class="detail-lifespan">${lifespan(p)}</p>`;
 
     html += `<dl class="detail-grid">`;
-    html += `<dt>Born</dt><dd>${p.birthDate || "unknown"}${p.birthPlace ? " &middot; " + p.birthPlace : ""}</dd>`;
-    html += `<dt>Died</dt><dd>${p.deathDate || (p.deathDate === null ? "unknown" : "&mdash;")}${p.deathPlace ? " &middot; " + p.deathPlace : ""}</dd>`;
+    html += `<dt>Born</dt><dd>${p.birthDate || "unknown"}${p.birthPlaceClean ? " &middot; " + p.birthPlaceClean : ""}</dd>`;
+    html += `<dt>Died</dt><dd>${p.deathDate || (p.deathDate === null ? "unknown" : "&mdash;")}${p.deathPlaceClean ? " &middot; " + p.deathPlaceClean : ""}</dd>`;
     if (p.father || p.mother) {
       html += `<dt>Parents</dt><dd>`;
       const parts = [];
@@ -590,10 +583,15 @@
 
     if (p.residences && p.residences.length) {
       html += `<div class="detail-section-title">Places lived</div>`;
-      html += `<div class="residence-list">`;
-      p.residences.forEach(r => {
-        const yearLabel = r.year ? (r.endYear && r.endYear !== r.year ? r.year + "\u2013" + r.endYear : String(r.year)) : (r.date || "date unknown");
-        html += `<div class="residence-row"><span class="residence-year">${yearLabel}</span><span class="residence-place">${r.place || "place unknown"}</span></div>`;
+      html += `<div class="residence-list timeline">`;
+      p.residences.forEach((r, idx) => {
+        const yearLabel = r.endYear && r.endYear !== r.year ? r.year + "\u2013" + r.endYear : String(r.year);
+        const isLast = idx === p.residences.length - 1;
+        html += `<div class="residence-row${isLast ? " residence-row-last" : ""}">`;
+        html += `<span class="residence-dot"></span>`;
+        html += `<span class="residence-year">${yearLabel}${r.toDeath ? " (until death)" : ""}</span>`;
+        html += `<span class="residence-place">${r.place}</span>`;
+        html += `</div>`;
       });
       html += `</div>`;
     }

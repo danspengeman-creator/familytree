@@ -21,20 +21,15 @@ const FAMILY_DATA = {
     "marriageDate": "9 Sep 2016",
     "marriagePlace": "Holmdel Township, Monmouth, New Jersey, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Holmdel, New Jersey"
    }
   ],
   "children": [],
   "note": null,
-  "residences": [
-   {
-    "date": "2002-2020",
-    "place": null,
-    "year": 2002,
-    "endDate": "2002-2020",
-    "endYear": 2002
-   }
-  ]
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763206466": {
   "id": "I252763206466",
@@ -58,7 +53,8 @@ const FAMILY_DATA = {
     "marriageDate": "Abt 1969",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -67,34 +63,26 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1950",
-    "place": "Oakhurst, Monmouth, New Jersey, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Oakhurst, New Jersey",
+    "key": "oakhurst"
    },
    {
-    "date": "17 Jun 1960",
-    "place": "Long Branch, New Jersey, USA",
     "year": 1960,
-    "endDate": "17 Jun 1960",
-    "endYear": 1960
+    "endYear": 1960,
+    "place": "Long Branch, New Jersey",
+    "key": "long branch"
    },
    {
-    "date": "1964",
-    "place": "Asbury Park, New Jersey, USA",
     "year": 1964,
-    "endDate": "1964",
-    "endYear": 1964
-   },
-   {
-    "date": null,
-    "place": "Oakhurst, Monmouth, New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1964,
+    "place": "Asbury Park, New Jersey",
+    "key": "asbury park"
    }
-  ]
+  ],
+  "birthPlaceClean": "Long Branch, New Jersey",
+  "deathPlaceClean": "Long Branch, New Jersey"
  },
  "I252763206513": {
   "id": "I252763206513",
@@ -116,7 +104,8 @@ const FAMILY_DATA = {
     "marriageDate": "Abt 1969",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -125,55 +114,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1950",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "year": 1945,
+    "endYear": 1961,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
    },
    {
-    "date": "1961",
-    "place": "Atlantic Highlands, New Jersey, USA",
-    "year": 1961,
-    "endDate": "1961",
-    "endYear": 1961
-   },
-   {
-    "date": "20 Jul 1966",
-    "place": "Red Bank, New Jersey, USA",
     "year": 1966,
-    "endDate": "20 Jul 1966",
-    "endYear": 1966
-   },
-   {
-    "date": "1979",
-    "place": null,
-    "year": 1979,
-    "endDate": "1979",
-    "endYear": 1979
-   },
-   {
-    "date": "1983-2020",
-    "place": null,
-    "year": 1983,
-    "endDate": "1983-2020",
-    "endYear": 1983
-   },
-   {
-    "date": "1998-2001",
-    "place": null,
-    "year": 1998,
-    "endDate": "1998-2001",
-    "endYear": 1998
-   },
-   {
-    "date": null,
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1966,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    }
-  ]
+  ],
+  "birthPlaceClean": "Atlantic Highlands, New Jersey",
+  "deathPlaceClean": null
  },
  "I252763206536": {
   "id": "I252763206536",
@@ -197,7 +151,8 @@ const FAMILY_DATA = {
     "marriageDate": "3 May 1945",
     "marriagePlace": "Coeur d'Alene, Kootenai, Idaho, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Coeur d'Alene, Idaho"
    }
   ],
   "children": [
@@ -207,48 +162,26 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Clinton, Clinton, Henry, Missouri, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "year": 1921,
+    "endYear": 1940,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    },
    {
-    "date": "1935",
-    "place": "Clinton, Henry, Missouri",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Clinton Township, Clinton, Henry, Missouri, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1950",
-    "place": "Oakhurst, Monmouth, New Jersey, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Oakhurst, New Jersey",
+    "key": "oakhurst"
    },
    {
-    "date": "22 Jul 1954",
-    "place": "Clinton, Missouri, USA",
     "year": 1954,
-    "endDate": "22 Jul 1954",
-    "endYear": 1954
-   },
-   {
-    "date": null,
-    "place": "Independence MO, Oakhurst, Idaho, Long Branch",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1954,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    }
-  ]
+  ],
+  "birthPlaceClean": "Clinton, Missouri",
+  "deathPlaceClean": "Oakhurst, New Jersey"
  },
  "I252763206558": {
   "id": "I252763206558",
@@ -270,7 +203,8 @@ const FAMILY_DATA = {
     "marriageDate": "3 May 1945",
     "marriagePlace": "Coeur d'Alene, Kootenai, Idaho, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Coeur d'Alene, Idaho"
    }
   ],
   "children": [
@@ -280,83 +214,44 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1920",
-    "place": "Harrison Ward 1, Hudson, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Harrison, New Jersey",
+    "key": "harrison"
    },
    {
-    "date": "1930",
-    "place": "Newark (Districts 1-250), Newark, Essex, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "endYear": 1940,
+    "place": "Newark, New Jersey",
+    "key": "newark"
    },
    {
-    "date": "1935",
-    "place": "Newark, Essex, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Newark, Essex, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1946",
-    "place": "503 Long Branch Av.,",
-    "year": 1946,
-    "endDate": "1946",
-    "endYear": 1946
-   },
-   {
-    "date": "1950",
-    "place": "Oakhurst, Monmouth, New Jersey, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Oakhurst, New Jersey",
+    "key": "oakhurst"
    },
    {
-    "date": "Before 1951",
-    "place": "New Jersey",
     "year": 1951,
-    "endDate": "Before 1951",
-    "endYear": 1951
+    "endYear": 1951,
+    "place": "New Jersey",
+    "key": "new jersey"
    },
    {
-    "date": "7 Jun 1960",
-    "place": "Red Bank, New Jersey, USA",
     "year": 1960,
-    "endDate": "7 Jun 1960",
-    "endYear": 1960
+    "endYear": 1960,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    },
    {
-    "date": "Abt 1969",
-    "place": "213 Odar Street , Oakhurst",
     "year": 1969,
-    "endDate": "Abt 1969",
-    "endYear": 1969
-   },
-   {
-    "date": null,
-    "place": "Newark, Essex, New Jersey",
-    "year": null,
-    "endDate": null,
-    "endYear": null
-   },
-   {
-    "date": null,
-    "place": "Ocean Township, Ocean, New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1969,
+    "place": "Oakhurst",
+    "key": "oakhurst"
    }
-  ]
+  ],
+  "birthPlaceClean": "Newark, New Jersey",
+  "deathPlaceClean": "Ocean, New Jersey"
  },
  "I252763206634": {
   "id": "I252763206634",
@@ -380,7 +275,8 @@ const FAMILY_DATA = {
     "marriageDate": "2 July 1944",
     "marriagePlace": "Navesink, New Jersey, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Navesink, New Jersey"
    }
   ],
   "children": [
@@ -390,62 +286,39 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Middletown, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "endYear": 1940,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1940",
-    "place": "Middletown T, Middletown, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "Abt 1944",
-    "place": "Atlantic City",
     "year": 1944,
-    "endDate": "Abt 1944",
-    "endYear": 1944
+    "endYear": 1944,
+    "place": "Atlantic City",
+    "key": "atlantic city"
    },
    {
-    "date": "1950",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
    },
    {
-    "date": "Before 1951",
-    "place": "New Jersey",
     "year": 1951,
-    "endDate": "Before 1951",
-    "endYear": 1951
+    "endYear": 1951,
+    "place": "New Jersey",
+    "key": "new jersey"
    },
    {
-    "date": "9 Oct 1953",
-    "place": "Atlantic Highlands, New Jersey, USA",
     "year": 1953,
-    "endDate": "9 Oct 1953",
-    "endYear": 1953
-   },
-   {
-    "date": "1993",
-    "place": null,
-    "year": 1993,
-    "endDate": "1993",
-    "endYear": 1993
-   },
-   {
-    "date": null,
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1994,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands",
+    "toDeath": true
    }
-  ]
+  ],
+  "birthPlaceClean": "Monmouth, New Jersey",
+  "deathPlaceClean": "Atlantic Highlands, New Jersey"
  },
  "I252763206649": {
   "id": "I252763206649",
@@ -467,7 +340,8 @@ const FAMILY_DATA = {
     "marriageDate": "2 July 1944",
     "marriagePlace": "Navesink, New Jersey, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Navesink, New Jersey"
    }
   ],
   "children": [
@@ -477,111 +351,75 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1920",
-    "place": "Manhattan Assembly District 14, New York, New York, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Manhattan, New York",
+    "key": "manhattan"
    },
    {
-    "date": "1925",
-    "place": "New York, Queens",
     "year": 1925,
-    "endDate": "1925",
-    "endYear": 1925
-   },
-   {
-    "date": "1930",
-    "place": "Queens (Districts 1-250), Queens, Queens, New York, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "New York, Queens, New York",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Long Island City A D 2, New York, Queens, New York, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "Abt 1944",
-    "place": "Atlantic City",
-    "year": 1944,
-    "endDate": "Abt 1944",
-    "endYear": 1944
-   },
-   {
-    "date": "1945",
-    "place": "Navesink Avenue. Navesink.",
-    "year": 1945,
-    "endDate": "1945",
-    "endYear": 1945
-   },
-   {
-    "date": "1950",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
-   },
-   {
-    "date": "Before 1951",
+    "endYear": 1925,
     "place": "New York",
-    "year": 1951,
-    "endDate": "Before 1951",
-    "endYear": 1951
+    "key": "new york"
    },
    {
-    "date": "25 Oct 1956",
-    "place": "Red Bank, New Jersey, USA",
-    "year": 1956,
-    "endDate": "25 Oct 1956",
-    "endYear": 1956
-   },
-   {
-    "date": "Abt 1969",
-    "place": "9 East Lincoln Ave. , Atlantic Highlands , New Jersey",
-    "year": 1969,
-    "endDate": "Abt 1969",
-    "endYear": 1969
-   },
-   {
-    "date": "1993-1997",
-    "place": null,
-    "year": 1993,
-    "endDate": "1993-1997",
-    "endYear": 1993
-   },
-   {
-    "date": null,
-    "place": "Atlantic Highlands, Monmouth, New Jersey",
-    "year": null,
-    "endDate": null,
-    "endYear": null
-   },
-   {
-    "date": null,
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
-   },
-   {
-    "date": null,
+    "year": 1930,
+    "endYear": 1930,
     "place": "Queens, New York",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "key": "queens"
+   },
+   {
+    "year": 1935,
+    "endYear": 1935,
+    "place": "New York",
+    "key": "new york"
+   },
+   {
+    "year": 1940,
+    "endYear": 1940,
+    "place": "Long Island City, New York",
+    "key": "long island city"
+   },
+   {
+    "year": 1944,
+    "endYear": 1944,
+    "place": "Atlantic City",
+    "key": "atlantic city"
+   },
+   {
+    "year": 1945,
+    "endYear": 1945,
+    "place": "Navesink Avenue. Navesink",
+    "key": "navesink avenue. navesink"
+   },
+   {
+    "year": 1950,
+    "endYear": 1950,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
+   },
+   {
+    "year": 1951,
+    "endYear": 1951,
+    "place": "New York",
+    "key": "new york"
+   },
+   {
+    "year": 1956,
+    "endYear": 1956,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
+   },
+   {
+    "year": 1969,
+    "endYear": 1999,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands",
+    "toDeath": true
    }
-  ]
+  ],
+  "birthPlaceClean": "New York City, New York",
+  "deathPlaceClean": "Atlantic Highlands, New Jersey"
  },
  "I252763206686": {
   "id": "I252763206686",
@@ -605,7 +443,8 @@ const FAMILY_DATA = {
     "marriageDate": "2 Dec 1908",
     "marriagePlace": "Henry, Missouri, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Henry, Missouri"
    }
   ],
   "children": [
@@ -615,69 +454,26 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    },
    {
-    "date": "1910",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1910,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1950,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    },
    {
-    "date": "1930",
-    "place": "Clinton, Clinton, Henry, Missouri, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "18 Oct 1934",
-    "place": "Clinton, Missouri, USA",
-    "year": 1934,
-    "endDate": "18 Oct 1934",
-    "endYear": 1934
-   },
-   {
-    "date": "1935",
-    "place": "Clinton, Henry, Missouri",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Clinton Township, Clinton, Henry, Missouri, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1950",
-    "place": "Clinton, Henry, Missouri, USA",
-    "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
-   },
-   {
-    "date": "Before 1951",
-    "place": "Missouri",
     "year": 1951,
-    "endDate": "Before 1951",
-    "endYear": 1951
-   },
-   {
-    "date": null,
-    "place": "Warren, Macomb, Michigan",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1951,
+    "place": "Missouri",
+    "key": "missouri"
    }
-  ]
+  ],
+  "birthPlaceClean": "Clinton, Missouri",
+  "deathPlaceClean": "Warren, Michigan"
  },
  "I252763206699": {
   "id": "I252763206699",
@@ -699,7 +495,8 @@ const FAMILY_DATA = {
     "marriageDate": "2 Dec 1908",
     "marriagePlace": "Henry, Missouri, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Henry, Missouri"
    }
   ],
   "children": [
@@ -709,76 +506,32 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Clinton, Henry, Missouri, USA",
-    "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "year": 1887,
+    "endYear": 1910,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    },
    {
-    "date": "1917-1918",
-    "place": "Henry County, Missouri, USA",
     "year": 1917,
-    "endDate": "1917-1918",
-    "endYear": 1917
-   },
-   {
-    "date": "1920",
-    "place": "Clinton, Henry, Missouri, USA",
-    "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
-   },
-   {
-    "date": "30 Dec 1927",
-    "place": "Clinton, Missouri, USA",
-    "year": 1927,
-    "endDate": "30 Dec 1927",
-    "endYear": 1927
-   },
-   {
-    "date": "1930",
-    "place": "Clinton, Clinton, Henry, Missouri, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Clinton, Henry, Missouri",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Clinton Township, Clinton, Henry, Missouri, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1950",
-    "place": "Clinton, Henry, Missouri, USA",
-    "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
-   },
-   {
-    "date": "Before 1951",
+    "endYear": 1917,
     "place": "Missouri",
-    "year": 1951,
-    "endDate": "Before 1951",
-    "endYear": 1951
+    "key": "missouri"
    },
    {
-    "date": null,
-    "place": "Clifton, Missouri, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "year": 1920,
+    "endYear": 1950,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
+   },
+   {
+    "year": 1951,
+    "endYear": 1951,
+    "place": "Missouri",
+    "key": "missouri"
    }
-  ]
+  ],
+  "birthPlaceClean": "Clinton, Missouri",
+  "deathPlaceClean": "Kansas City, Missouri"
  },
  "I252763206878": {
   "id": "I252763206878",
@@ -800,7 +553,8 @@ const FAMILY_DATA = {
     "marriageDate": "29 Aug 1911",
     "marriagePlace": "Duncan Home, Red Bank, NJ",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Red Bank, New Jersey"
    }
   ],
   "children": [
@@ -813,83 +567,50 @@ const FAMILY_DATA = {
   "note": "Two Ancestry record entries for Holmes Cleveland Crawford (with two different sets of parents) were merged into this one profile. The version below, son of Franklin Everett Crawford and Alvira Emmons, was kept; the alternate version (son of a 'Charles Frederick Duncan' and 'Alvira Crawford') was dropped, since that branch shared an identical, almost certainly duplicated, death record with Franklin Everett Crawford.",
   "residences": [
    {
-    "date": "1900",
-    "place": "Holmdel, Monmouth, New Jersey, USA",
-    "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "year": 1886,
+    "endYear": 1910,
+    "place": "Holmdel, New Jersey",
+    "key": "holmdel"
    },
    {
-    "date": "30 Aug 1911",
-    "place": "Long Branch, New Jersey, USA",
     "year": 1911,
-    "endDate": "30 Aug 1911",
-    "endYear": 1911
+    "endYear": 1911,
+    "place": "Long Branch, New Jersey",
+    "key": "long branch"
    },
    {
-    "date": "1915",
-    "place": "2nd District Poll Middletown Township, New Jersey, USA",
     "year": 1915,
-    "endDate": "1915",
-    "endYear": 1915
+    "endYear": 1915,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1917-1918",
-    "place": "Monmouth County, New Jersey, USA",
     "year": 1917,
-    "endDate": "1917-1918",
-    "endYear": 1917
+    "endYear": 1917,
+    "place": "New Jersey",
+    "key": "new jersey"
    },
    {
-    "date": "1920",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1940,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1930",
-    "place": "Middletown, Middletown, Monmouth, New Jersey, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1940",
-    "place": "Middletown T, Middletown, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "Abt 1944",
-    "place": "Navesink Ayenue ; Locust",
     "year": 1944,
-    "endDate": "Abt 1944",
-    "endYear": 1944
+    "endYear": 1944,
+    "place": "Navesink Ayenue ; Locust",
+    "key": "navesink ayenue ; locust"
    },
    {
-    "date": "1950",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
-   },
-   {
-    "date": null,
-    "place": "Monmouth, New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
-   },
-   {
-    "date": null,
-    "place": "Navesink, Monmouth, New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1950,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "Holmdel, New Jersey",
+  "deathPlaceClean": "Long Branch, New Jersey"
  },
  "I252763206879": {
   "id": "I252763206879",
@@ -913,7 +634,8 @@ const FAMILY_DATA = {
     "marriageDate": "29 Aug 1911",
     "marriagePlace": "Duncan Home, Red Bank, NJ",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Red Bank, New Jersey"
    }
   ],
   "children": [
@@ -926,90 +648,44 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1895",
-    "place": "Freehold, Monmouth, New Jersey, USA",
     "year": 1895,
-    "endDate": "1895",
-    "endYear": 1895
+    "endYear": 1895,
+    "place": "Freehold, New Jersey",
+    "key": "freehold"
    },
    {
-    "date": "1900",
-    "place": "Shrewsbury, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1905,
+    "place": "Shrewsbury, New Jersey",
+    "key": "shrewsbury"
    },
    {
-    "date": "1905",
-    "place": "Shrewsbury Township, Town of Red Bank, Monmouth, New Jersey, USA",
-    "year": 1905,
-    "endDate": "1905",
-    "endYear": 1905
-   },
-   {
-    "date": "1910",
-    "place": "Red Bank, Monmouth, New Jersey, USA",
     "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    },
    {
-    "date": "1 Sep 1911",
-    "place": "Freehold, New Jersey, USA",
     "year": 1911,
-    "endDate": "1 Sep 1911",
-    "endYear": 1911
+    "endYear": 1911,
+    "place": "Freehold, New Jersey",
+    "key": "freehold"
    },
    {
-    "date": "1920",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1950,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1930",
-    "place": "Middletown, Middletown, Monmouth, New Jersey, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1940",
-    "place": "Middletown T, Middletown, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1950",
-    "place": "Middletown, Monmouth, New Jersey, USA",
-    "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
-   },
-   {
-    "date": "1963-1964",
-    "place": "New Jersey",
     "year": 1963,
-    "endDate": "1963-1964",
-    "endYear": 1963
-   },
-   {
-    "date": null,
-    "place": "Middletown, Monmouth, New Jersey",
-    "year": null,
-    "endDate": null,
-    "endYear": null
-   },
-   {
-    "date": null,
-    "place": "New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1963,
+    "place": "New Jersey",
+    "key": "new jersey"
    }
-  ]
+  ],
+  "birthPlaceClean": "Red Bank, New Jersey",
+  "deathPlaceClean": "Hazlet, New Jersey"
  },
  "I252763207059": {
   "id": "I252763207059",
@@ -1043,55 +719,44 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1950",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
    },
    {
-    "date": "1964",
-    "place": "Highlands, New Jersey, USA",
     "year": 1964,
-    "endDate": "1964",
-    "endYear": 1964
+    "endYear": 1964,
+    "place": "Highlands, New Jersey",
+    "key": "highlands"
    },
    {
-    "date": "18 Jun 1965",
-    "place": "Red Bank, New Jersey, USA",
     "year": 1965,
-    "endDate": "18 Jun 1965",
-    "endYear": 1965
+    "endYear": 1965,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    },
    {
-    "date": "1967",
-    "place": "Williamsburg, Virginia, USA",
     "year": 1967,
-    "endDate": "1969",
-    "endYear": 1969
+    "endYear": 1969,
+    "place": "Williamsburg, Virginia",
+    "key": "williamsburg"
    },
    {
-    "date": "17 May 1970",
-    "place": "Roanoke, Virginia, USA",
     "year": 1970,
-    "endDate": "17 May 1970",
-    "endYear": 1970
+    "endYear": 1970,
+    "place": "Roanoke, Virginia",
+    "key": "roanoke"
    },
    {
-    "date": "1994",
-    "place": "Franklin, VA",
     "year": 1994,
-    "endDate": "1994",
-    "endYear": 1994
-   },
-   {
-    "date": null,
-    "place": "Franklin, Virginia, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1994,
+    "place": "Franklin, Virginia",
+    "key": "franklin"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": null
  },
  "I252763207206": {
   "id": "I252763207206",
@@ -1111,20 +776,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Middletown, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1940",
-    "place": "Middletown T, Middletown, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "Navesink, New Jersey",
+  "deathPlaceClean": "Leonardo, New Jersey"
  },
  "I252763207207": {
   "id": "I252763207207",
@@ -1144,27 +803,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1920",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
-   },
-   {
-    "date": "1930",
-    "place": "Middletown, Middletown, Monmouth, New Jersey, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1940",
-    "place": "Middletown T, Middletown, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "Navesink, New Jersey",
+  "deathPlaceClean": "Tampa, Florida"
  },
  "I252763207208": {
   "id": "I252763207208",
@@ -1184,20 +830,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1940",
-    "place": "Middletown T, Middletown, Monmouth, New Jersey, USA",
     "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1950",
-    "place": "Middletown, Monmouth, New Jersey, USA",
-    "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "Navesink, New Jersey",
+  "deathPlaceClean": "Neptune City, New Jersey"
  },
  "I252763207209": {
   "id": "I252763207209",
@@ -1217,34 +857,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1920",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
-   },
-   {
-    "date": "1930",
-    "place": "Middletown, Middletown, Monmouth, New Jersey, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1940",
-    "place": "Middletown T, Middletown, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1950",
-    "place": "Middletown, Monmouth, New Jersey, USA",
-    "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "Navesink, New Jersey",
+  "deathPlaceClean": "Keansburg, New Jersey"
  },
  "I252763209567": {
   "id": "I252763209567",
@@ -1266,7 +886,8 @@ const FAMILY_DATA = {
     "marriageDate": "1914",
     "marriagePlace": "New Jersey, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "New Jersey"
    }
   ],
   "children": [
@@ -1275,90 +896,50 @@ const FAMILY_DATA = {
   "note": "Recorded once under the German form of his name, Wilhelm Spengeman, alongside the anglicized William.",
   "residences": [
    {
-    "date": "1900",
-    "place": "Manhattan, New York, New York, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1910,
+    "place": "Manhattan, New York",
+    "key": "manhattan"
    },
    {
-    "date": "1910",
-    "place": "Manhattan Ward 12, New York, New York, USA",
-    "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
-   },
-   {
-    "date": "1 June 1915",
-    "place": "New York, New York, New York, United States",
     "year": 1915,
-    "endDate": "1 June 1915",
-    "endYear": 1915
-   },
-   {
-    "date": "1917-1918",
-    "place": "Manhattan, New York, New York, USA",
-    "year": 1917,
-    "endDate": "1917-1918",
-    "endYear": 1917
-   },
-   {
-    "date": "1920",
-    "place": "Manhattan Assembly District 14, New York, New York, USA",
-    "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
-   },
-   {
-    "date": "1924",
-    "place": "New York, New York, USA",
-    "year": 1924,
-    "endDate": "1924",
-    "endYear": 1924
-   },
-   {
-    "date": "1925",
-    "place": "New York, Queens",
-    "year": 1925,
-    "endDate": "1925",
-    "endYear": 1925
-   },
-   {
-    "date": "1930",
-    "place": "Queens (Districts 1-250), Queens, Queens, New York, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "New York, Queens, New York",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Long Island City A D 2, New York, Queens, New York, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "Abt 1944",
-    "place": "Long Island City , N. Y.",
-    "year": 1944,
-    "endDate": "Abt 1944",
-    "endYear": 1944
-   },
-   {
-    "date": null,
+    "endYear": 1915,
     "place": "New York",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "key": "new york"
+   },
+   {
+    "year": 1917,
+    "endYear": 1920,
+    "place": "Manhattan, New York",
+    "key": "manhattan"
+   },
+   {
+    "year": 1924,
+    "endYear": 1925,
+    "place": "New York",
+    "key": "new york"
+   },
+   {
+    "year": 1930,
+    "endYear": 1930,
+    "place": "Queens, New York",
+    "key": "queens"
+   },
+   {
+    "year": 1935,
+    "endYear": 1935,
+    "place": "New York",
+    "key": "new york"
+   },
+   {
+    "year": 1940,
+    "endYear": 1944,
+    "place": "Long Island City, New York",
+    "key": "long island city"
    }
-  ]
+  ],
+  "birthPlaceClean": "New York",
+  "deathPlaceClean": "Queens, New York"
  },
  "I252763209645": {
   "id": "I252763209645",
@@ -1380,7 +961,8 @@ const FAMILY_DATA = {
     "marriageDate": "1891",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -1389,20 +971,14 @@ const FAMILY_DATA = {
   "note": "Family history holds that the surname was originally spelled von Spengemann before the family's immigration from Germany. Arrival in the U.S. is recorded as 1883 or 1884.",
   "residences": [
    {
-    "date": "1900",
-    "place": "Manhattan, New York, New York, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
-   },
-   {
-    "date": "1910",
-    "place": "Manhattan Ward 12, New York, New York, USA",
-    "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Manhattan, New York",
+    "key": "manhattan"
    }
-  ]
+  ],
+  "birthPlaceClean": "Germany",
+  "deathPlaceClean": "New York City, New York"
  },
  "I252763209646": {
   "id": "I252763209646",
@@ -1424,7 +1000,8 @@ const FAMILY_DATA = {
     "marriageDate": "1891",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -1433,20 +1010,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Manhattan, New York, New York, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
-   },
-   {
-    "date": "1910",
-    "place": "Manhattan Ward 12, New York, New York, USA",
-    "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Manhattan, New York",
+    "key": "manhattan"
    }
-  ]
+  ],
+  "birthPlaceClean": "Germany",
+  "deathPlaceClean": null
  },
  "I252763209647": {
   "id": "I252763209647",
@@ -1470,7 +1041,8 @@ const FAMILY_DATA = {
     "marriageDate": "1914",
     "marriagePlace": "New Jersey, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "New Jersey"
    }
   ],
   "children": [
@@ -1479,55 +1051,50 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1 June 1915",
-    "place": "New York, New York, New York, United States",
     "year": 1915,
-    "endDate": "1 June 1915",
-    "endYear": 1915
+    "endYear": 1915,
+    "place": "New York",
+    "key": "new york"
    },
    {
-    "date": "1920",
-    "place": "Manhattan Assembly District 14, New York, New York, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Manhattan, New York",
+    "key": "manhattan"
    },
    {
-    "date": "1925",
-    "place": "New York, Queens",
     "year": 1925,
-    "endDate": "1925",
-    "endYear": 1925
+    "endYear": 1925,
+    "place": "New York",
+    "key": "new york"
    },
    {
-    "date": "1930",
-    "place": "Queens (Districts 1-250), Queens, Queens, New York, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "endYear": 1930,
+    "place": "Queens, New York",
+    "key": "queens"
    },
    {
-    "date": "1935",
-    "place": "New York, Queens, New York",
     "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
+    "endYear": 1935,
+    "place": "New York",
+    "key": "new york"
    },
    {
-    "date": "1940",
-    "place": "Long Island City A D 2, New York, Queens, New York, USA",
     "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Long Island City, New York",
+    "key": "long island city"
    }
-  ]
+  ],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763210461": {
   "id": "I252763210461",
@@ -1547,13 +1114,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    }
-  ]
+  ],
+  "birthPlaceClean": "Clinton, Missouri",
+  "deathPlaceClean": "Canby, Minnesota"
  },
  "I252763210462": {
   "id": "I252763210462",
@@ -1573,20 +1141,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    },
    {
-    "date": "1910",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    }
-  ]
+  ],
+  "birthPlaceClean": "Clinton, Missouri",
+  "deathPlaceClean": "Vian, Oklahoma"
  },
  "I252763210463": {
   "id": "I252763210463",
@@ -1606,20 +1174,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    },
    {
-    "date": "1910",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1910,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    }
-  ]
+  ],
+  "birthPlaceClean": "Clinton, Missouri",
+  "deathPlaceClean": "Solano, California"
  },
  "I252763210464": {
   "id": "I252763210464",
@@ -1639,13 +1207,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    }
-  ]
+  ],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": "Columbia, Missouri"
  },
  "I252763210465": {
   "id": "I252763210465",
@@ -1665,20 +1234,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    },
    {
-    "date": "1910",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    }
-  ]
+  ],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": "Colorado Springs, Colorado"
  },
  "I252763210466": {
   "id": "I252763210466",
@@ -1698,20 +1267,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1880",
-    "place": "Monroe, Carroll, Indiana, USA",
     "year": 1880,
-    "endDate": "1880",
-    "endYear": 1880
+    "endYear": 1880,
+    "place": "Monroe, Indiana",
+    "key": "monroe"
    },
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    }
-  ]
+  ],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": null
  },
  "I252763210467": {
   "id": "I252763210467",
@@ -1731,20 +1300,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1880",
-    "place": "Monroe, Carroll, Indiana, USA",
     "year": 1880,
-    "endDate": "1880",
-    "endYear": 1880
+    "endYear": 1880,
+    "place": "Monroe, Indiana",
+    "key": "monroe"
    },
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    }
-  ]
+  ],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": "Springfield, Missouri"
  },
  "I252763210468": {
   "id": "I252763210468",
@@ -1764,20 +1333,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1880",
-    "place": "Monroe, Carroll, Indiana, USA",
     "year": 1880,
-    "endDate": "1880",
-    "endYear": 1880
+    "endYear": 1880,
+    "place": "Monroe, Indiana",
+    "key": "monroe"
    },
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    }
-  ]
+  ],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": "California"
  },
  "I252763210469": {
   "id": "I252763210469",
@@ -1795,7 +1364,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": null
  },
  "I252763210470": {
   "id": "I252763210470",
@@ -1817,7 +1388,8 @@ const FAMILY_DATA = {
     "marriageDate": "6 Feb 1873",
     "marriagePlace": "Daviess, Missouri, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Daviess, Missouri"
    }
   ],
   "children": [
@@ -1836,27 +1408,27 @@ const FAMILY_DATA = {
   "note": "Records disagree on the exact birth and death dates: birth as either 22 Feb 1846 or 23 Feb 1847, death as either 14 Feb or 15 Feb 1922. This site uses 22 Feb 1846 and 14 Feb 1922.",
   "residences": [
    {
-    "date": "1880",
-    "place": "Monroe, Carroll, Indiana, USA",
     "year": 1880,
-    "endDate": "1880",
-    "endYear": 1880
+    "endYear": 1880,
+    "place": "Monroe, Indiana",
+    "key": "monroe"
    },
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    },
    {
-    "date": "1910",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1910,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1922,
+    "place": "Clinton, Missouri",
+    "key": "clinton",
+    "toDeath": true
    }
-  ]
+  ],
+  "birthPlaceClean": "Warren, Indiana",
+  "deathPlaceClean": "Clinton, Missouri"
  },
  "I252763210471": {
   "id": "I252763210471",
@@ -1880,7 +1452,8 @@ const FAMILY_DATA = {
     "marriageDate": "6 Feb 1873",
     "marriagePlace": "Daviess, Missouri, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Daviess, Missouri"
    }
   ],
   "children": [
@@ -1899,62 +1472,51 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1860",
-    "place": "Democrat, Princewilliam, Carroll, Indiana, USA",
     "year": 1860,
-    "endDate": "1860",
-    "endYear": 1860
+    "endYear": 1860,
+    "place": "Democrat, Indiana",
+    "key": "democrat"
    },
    {
-    "date": "1880",
-    "place": "Monroe, Carroll, Indiana, USA",
     "year": 1880,
-    "endDate": "1880",
-    "endYear": 1880
+    "endYear": 1880,
+    "place": "Monroe, Indiana",
+    "key": "monroe"
    },
    {
-    "date": "31 Aug 1888",
-    "place": "Marion, Indiana, USA",
     "year": 1888,
-    "endDate": "31 Aug 1888",
-    "endYear": 1888
+    "endYear": 1888,
+    "place": "Marion, Indiana",
+    "key": "marion"
    },
    {
-    "date": "1900",
-    "place": "Big Creek, Ozark, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Big Creek, Missouri",
+    "key": "big creek"
    },
    {
-    "date": "1910",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1910,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    },
    {
-    "date": "1927",
-    "place": "Springfield, Missouri, USA",
     "year": 1927,
-    "endDate": "1927",
-    "endYear": 1927
+    "endYear": 1927,
+    "place": "Springfield, Missouri",
+    "key": "springfield"
    },
    {
-    "date": "1930",
-    "place": "Clinton, Clinton, Henry, Missouri, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": null,
-    "place": "Delphi, Indiana, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1930,
+    "place": "Clinton, Missouri",
+    "key": "clinton",
+    "toDeath": true
    }
-  ]
+  ],
+  "birthPlaceClean": "Ervin, Indiana",
+  "deathPlaceClean": "Clinton, Missouri"
  },
  "I252763210472": {
   "id": "I252763210472",
@@ -1988,69 +1550,50 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1910",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1910,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1930,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    },
    {
-    "date": "1930",
-    "place": "Clinton, Clinton, Henry, Missouri, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Detroit, Wayne, Michigan",
     "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
+    "endYear": 1935,
+    "place": "Detroit, Michigan",
+    "key": "detroit"
    },
    {
-    "date": "1940",
-    "place": "Royal Oak, Oakland, Michigan, USA",
     "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Royal Oak, Michigan",
+    "key": "royal oak"
    },
    {
-    "date": "1941",
-    "place": "Springfield, Missouri, USA",
     "year": 1941,
-    "endDate": "1941",
-    "endYear": 1941
+    "endYear": 1941,
+    "place": "Springfield, Missouri",
+    "key": "springfield"
    },
    {
-    "date": "1950",
-    "place": "Royal Oak, Oakland, Michigan, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Royal Oak, Michigan",
+    "key": "royal oak"
    },
    {
-    "date": "Before 1951",
-    "place": "Michigan",
     "year": 1951,
-    "endDate": "Before 1951",
-    "endYear": 1951
+    "endYear": 1951,
+    "place": "Michigan",
+    "key": "michigan"
    },
    {
-    "date": "1983",
-    "place": "Royal Oak, MI",
     "year": 1983,
-    "endDate": "1983",
-    "endYear": 1983
-   },
-   {
-    "date": null,
-    "place": "Pontiac, Oakland, Michigan",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1983,
+    "place": "Royal Oak, Michigan",
+    "key": "royal oak"
    }
-  ]
+  ],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": "Pontiac, Michigan"
  },
  "I252763326708": {
   "id": "I252763326708",
@@ -2070,13 +1613,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763326709": {
   "id": "I252763326709",
@@ -2096,13 +1640,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763326710": {
   "id": "I252763326710",
@@ -2136,48 +1681,21 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1920,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1905",
-    "place": "Middletown Township, Third Polling District, Monmouth, New Jersey, USA",
-    "year": 1905,
-    "endDate": "1905",
-    "endYear": 1905
-   },
-   {
-    "date": "1910",
-    "place": "Middletown, Monmouth, New Jersey, USA",
-    "year": 1910,
-    "endDate": "1920",
-    "endYear": 1920
-   },
-   {
-    "date": "1930",
-    "place": "Atlantic Highlands, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Atlantic Highlands, Monmouth, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1942,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands",
+    "toDeath": true
    }
-  ]
+  ],
+  "birthPlaceClean": null,
+  "deathPlaceClean": "Atlantic Highlands, New Jersey"
  },
  "I252763326711": {
   "id": "I252763326711",
@@ -2197,13 +1715,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Middletown, Monmouth, New Jersey, USA",
-    "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "year": 1884,
+    "endYear": 1910,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "Middletown, New Jersey",
+  "deathPlaceClean": "Marlboro, New Jersey"
  },
  "I252763326712": {
   "id": "I252763326712",
@@ -2225,7 +1744,8 @@ const FAMILY_DATA = {
     "marriageDate": "1881",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -2238,13 +1758,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": null,
+  "deathPlaceClean": "Atlantic Highlands, New Jersey"
  },
  "I252763326714": {
   "id": "I252763326714",
@@ -2268,7 +1789,8 @@ const FAMILY_DATA = {
     "marriageDate": "1881",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -2281,13 +1803,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Middletown, Monmouth, New Jersey, USA",
-    "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "year": 1855,
+    "endYear": 1910,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "Middletown, New Jersey",
+  "deathPlaceClean": "Atlantic Highlands, New Jersey"
  },
  "I252763327086": {
   "id": "I252763327086",
@@ -2307,13 +1830,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Holmdel, Monmouth, New Jersey, USA",
-    "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "year": 1884,
+    "endYear": 1910,
+    "place": "Holmdel, New Jersey",
+    "key": "holmdel"
    }
-  ]
+  ],
+  "birthPlaceClean": "Holmdel, New Jersey",
+  "deathPlaceClean": "Harrison, Arkansas"
  },
  "I252763327087": {
   "id": "I252763327087",
@@ -2333,13 +1857,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Holmdel, Monmouth, New Jersey, USA",
-    "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "year": 1888,
+    "endYear": 1900,
+    "place": "Holmdel, New Jersey",
+    "key": "holmdel"
    }
-  ]
+  ],
+  "birthPlaceClean": "Holmdel, New Jersey",
+  "deathPlaceClean": "Red Bank, New Jersey"
  },
  "I252763327088": {
   "id": "I252763327088",
@@ -2359,13 +1884,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Holmdel, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Holmdel, New Jersey",
+    "key": "holmdel"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": "Allenwood, New Jersey"
  },
  "I252763327089": {
   "id": "I252763327089",
@@ -2385,13 +1911,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Holmdel, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Holmdel, New Jersey",
+    "key": "holmdel"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": null
  },
  "I252763327090": {
   "id": "I252763327090",
@@ -2413,7 +1940,8 @@ const FAMILY_DATA = {
     "marriageDate": "1880",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -2426,13 +1954,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Holmdel, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Holmdel, New Jersey",
+    "key": "holmdel"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": "Red Bank, New Jersey"
  },
  "I252763327091": {
   "id": "I252763327091",
@@ -2456,7 +1985,8 @@ const FAMILY_DATA = {
     "marriageDate": "1880",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -2469,20 +1999,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Holmdel, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Holmdel, New Jersey",
+    "key": "holmdel"
    },
    {
-    "date": "1920",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": "New Jersey"
  },
  "I252763327739": {
   "id": "I252763327739",
@@ -2502,13 +2032,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1910",
-    "place": "Red Bank, Monmouth, New Jersey, USA",
-    "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "year": 1901,
+    "endYear": 1910,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    }
-  ]
+  ],
+  "birthPlaceClean": "Red Bank, New Jersey",
+  "deathPlaceClean": "Eatontown, New Jersey"
  },
  "I252763327740": {
   "id": "I252763327740",
@@ -2528,13 +2059,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Shrewsbury, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Shrewsbury, New Jersey",
+    "key": "shrewsbury"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": null
  },
  "I252763327741": {
   "id": "I252763327741",
@@ -2554,20 +2086,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Shrewsbury, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Shrewsbury, New Jersey",
+    "key": "shrewsbury"
    },
    {
-    "date": "1910",
-    "place": "Red Bank, Monmouth, New Jersey, USA",
     "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    }
-  ]
+  ],
+  "birthPlaceClean": "Monmouth, New Jersey",
+  "deathPlaceClean": "Point Pleasant Beach, New Jersey"
  },
  "I252763327742": {
   "id": "I252763327742",
@@ -2587,13 +2119,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Shrewsbury, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Shrewsbury, New Jersey",
+    "key": "shrewsbury"
    }
-  ]
+  ],
+  "birthPlaceClean": "Red Bank, New Jersey",
+  "deathPlaceClean": "Red Bank, New Jersey"
  },
  "I252763327744": {
   "id": "I252763327744",
@@ -2617,7 +2150,8 @@ const FAMILY_DATA = {
     "marriageDate": "6 Apr 1913",
     "marriagePlace": null,
     "uncertain": true,
-    "altDate": "30 Oct 1917"
+    "altDate": "30 Oct 1917",
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -2629,20 +2163,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Shrewsbury, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Shrewsbury, New Jersey",
+    "key": "shrewsbury"
    },
    {
-    "date": "1910",
-    "place": "Red Bank, Monmouth, New Jersey, USA",
     "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": "Asbury Park, New Jersey"
  },
  "I252763327745": {
   "id": "I252763327745",
@@ -2662,20 +2196,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Shrewsbury, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Shrewsbury, New Jersey",
+    "key": "shrewsbury"
    },
    {
-    "date": "1910",
-    "place": "Red Bank, Monmouth, New Jersey, USA",
     "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    }
-  ]
+  ],
+  "birthPlaceClean": "Red Bank, New Jersey",
+  "deathPlaceClean": "Plainfield, New Jersey"
  },
  "I252763327746": {
   "id": "I252763327746",
@@ -2697,7 +2231,8 @@ const FAMILY_DATA = {
     "marriageDate": "9 Dec 1883",
     "marriagePlace": "Oceanport, Monmouth, New Jersey",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Oceanport, New Jersey"
    }
   ],
   "children": [
@@ -2712,20 +2247,14 @@ const FAMILY_DATA = {
   "note": "Recorded once with a set of parents under the surname Crawford rather than Duncan (see family F16 note). Kept as documented, but this profile's own surname (Duncan) is used for display, since that is how he, his marriage, and all his children were consistently recorded elsewhere.",
   "residences": [
    {
-    "date": "1900",
-    "place": "Shrewsbury, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
-   },
-   {
-    "date": null,
-    "place": "New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1900,
+    "place": "Shrewsbury, New Jersey",
+    "key": "shrewsbury"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": "Red Bank, New Jersey"
  },
  "I252763327747": {
   "id": "I252763327747",
@@ -2749,7 +2278,8 @@ const FAMILY_DATA = {
     "marriageDate": "9 Dec 1883",
     "marriagePlace": "Oceanport, Monmouth, New Jersey",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Oceanport, New Jersey"
    }
   ],
   "children": [
@@ -2764,34 +2294,26 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Shrewsbury, Monmouth, New Jersey, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Shrewsbury, New Jersey",
+    "key": "shrewsbury"
    },
    {
-    "date": "1910",
-    "place": "Red Bank, Monmouth, New Jersey, USA",
     "year": 1910,
-    "endDate": "1910",
-    "endYear": 1910
+    "endYear": 1910,
+    "place": "Red Bank, New Jersey",
+    "key": "red bank"
    },
    {
-    "date": "1930",
-    "place": "Middletown, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": null,
-    "place": "New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1930,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    }
-  ]
+  ],
+  "birthPlaceClean": "Englishtown, New Jersey",
+  "deathPlaceClean": "Navesink, New Jersey"
  },
  "I252763327861": {
   "id": "I252763327861",
@@ -2827,69 +2349,57 @@ const FAMILY_DATA = {
   "note": "Sandra's four children (Jeremy, Justin, Susan Eliza, and Sara Marie) were all born with the surname Spengeman. Sara Marie later took the surname Barnes upon marrying Edward Barnes; the other three kept Spengeman.",
   "residences": [
    {
-    "date": "1950",
-    "place": "Elk Garden, Russell, Virginia, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Elk Garden, Virginia",
+    "key": "elk garden"
    },
    {
-    "date": "1960",
-    "place": "Big Stone Gap, Virginia, USA",
     "year": 1960,
-    "endDate": "1960",
-    "endYear": 1960
+    "endYear": 1960,
+    "place": "Big Stone Gap, Virginia",
+    "key": "big stone gap"
    },
    {
-    "date": "1961",
-    "place": "Lebanon, Virginia, USA",
     "year": 1961,
-    "endDate": "1965",
-    "endYear": 1965
+    "endYear": 1965,
+    "place": "Lebanon, Virginia",
+    "key": "lebanon"
    },
    {
-    "date": "1968",
-    "place": "Williamsburg, Virginia, USA",
     "year": 1968,
-    "endDate": "1969",
-    "endYear": 1969
+    "endYear": 1969,
+    "place": "Williamsburg, Virginia",
+    "key": "williamsburg"
    },
    {
-    "date": "1972",
-    "place": "Windsor, Virginia, USA",
     "year": 1972,
-    "endDate": "1972",
-    "endYear": 1972
+    "endYear": 1972,
+    "place": "Windsor, Virginia",
+    "key": "windsor"
    },
    {
-    "date": "20 Jun 1973",
-    "place": "Smithfield, Virginia, USA",
     "year": 1973,
-    "endDate": "20 Jun 1973",
-    "endYear": 1973
+    "endYear": 1973,
+    "place": "Smithfield, Virginia",
+    "key": "smithfield"
    },
    {
-    "date": "1974",
-    "place": "Windsor, Virginia, USA",
     "year": 1974,
-    "endDate": "1974",
-    "endYear": 1974
+    "endYear": 1974,
+    "place": "Windsor, Virginia",
+    "key": "windsor"
    },
    {
-    "date": "1985-2020",
-    "place": "Franklin, Virginia, USA",
     "year": 1985,
-    "endDate": "1988",
-    "endYear": 1988
-   },
-   {
-    "date": "1993",
-    "place": "Franklin, VA",
-    "year": 1993,
-    "endDate": "1993",
-    "endYear": 1993
+    "endYear": 2022,
+    "place": "Franklin, Virginia",
+    "key": "franklin",
+    "toDeath": true
    }
-  ]
+  ],
+  "birthPlaceClean": null,
+  "deathPlaceClean": "Franklin, Virginia"
  },
  "I252763332561": {
   "id": "I252763332561",
@@ -2909,55 +2419,38 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1967",
-    "place": "Oakhurst, New Jersey, USA",
     "year": 1967,
-    "endDate": "1969",
-    "endYear": 1969
+    "endYear": 1969,
+    "place": "Oakhurst, New Jersey",
+    "key": "oakhurst"
    },
    {
-    "date": "1982-2020",
-    "place": "Darby, Montana, USA",
     "year": 1982,
-    "endDate": "1982-2020",
-    "endYear": 1982
+    "endYear": 1982,
+    "place": "Darby, Montana",
+    "key": "darby"
    },
    {
-    "date": "4 Sep 1984",
-    "place": "Hamilton, Montana, USA",
     "year": 1984,
-    "endDate": "4 Sep 1984",
-    "endYear": 1984
+    "endYear": 1984,
+    "place": "Hamilton, Montana",
+    "key": "hamilton"
    },
    {
-    "date": "1986",
-    "place": "Darby, Montana, USA",
     "year": 1986,
-    "endDate": "1986",
-    "endYear": 1986
+    "endYear": 1997,
+    "place": "Darby, Montana",
+    "key": "darby"
    },
    {
-    "date": "1994",
-    "place": "Darby, MT",
-    "year": 1994,
-    "endDate": "1995",
-    "endYear": 1995
-   },
-   {
-    "date": "1996-2001",
-    "place": "Darby, Montana, USA",
-    "year": 1996,
-    "endDate": "1997",
-    "endYear": 1997
-   },
-   {
-    "date": "2003-2009",
-    "place": "Hamilton, Montana, USA",
     "year": 2003,
-    "endDate": "2003-2009",
-    "endYear": 2003
+    "endYear": 2003,
+    "place": "Hamilton, Montana",
+    "key": "hamilton"
    }
-  ]
+  ],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763333357": {
   "id": "I252763333357",
@@ -2977,27 +2470,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Newark (Districts 1-250), Newark, Essex, New Jersey, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Newark, Essex, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Newark, Essex, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "year": 1922,
+    "endYear": 1940,
+    "place": "Newark, New Jersey",
+    "key": "newark"
    }
-  ]
+  ],
+  "birthPlaceClean": "Newark, New Jersey",
+  "deathPlaceClean": "Lakeland, Florida"
  },
  "I252763333358": {
   "id": "I252763333358",
@@ -3019,7 +2499,8 @@ const FAMILY_DATA = {
     "marriageDate": "2 Dec 1908",
     "marriagePlace": "Henry, Missouri, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Henry, Missouri"
    }
   ],
   "children": [
@@ -3030,62 +2511,26 @@ const FAMILY_DATA = {
   "note": "Originally recorded as Nikola Pacuk on arrival from Galicia (then part of Austria-Hungary, a region straddling present-day Poland and Ukraine). The surname was anglicized to Packet sometime after immigration.",
   "residences": [
    {
-    "date": "1920",
-    "place": "Harrison Ward 1, Hudson, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Harrison, New Jersey",
+    "key": "harrison"
    },
    {
-    "date": "1930",
-    "place": "Newark (Districts 1-250), Newark, Essex, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "endYear": 1941,
+    "place": "Newark, New Jersey",
+    "key": "newark"
    },
    {
-    "date": "1935",
-    "place": "Newark, Essex, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Newark, Essex, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1941",
-    "place": "Newark, New Jersey, USA",
-    "year": 1941,
-    "endDate": "1941",
-    "endYear": 1941
-   },
-   {
-    "date": "Before 1951",
-    "place": "New Jersey",
     "year": 1951,
-    "endDate": "Before 1951",
-    "endYear": 1951
-   },
-   {
-    "date": null,
-    "place": "Essex Township, New Jersey, USA",
-    "year": null,
-    "endDate": null,
-    "endYear": null
-   },
-   {
-    "date": null,
-    "place": "Newark",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1951,
+    "place": "New Jersey",
+    "key": "new jersey"
    }
-  ]
+  ],
+  "birthPlaceClean": "Galicia",
+  "deathPlaceClean": null
  },
  "I252763333359": {
   "id": "I252763333359",
@@ -3109,7 +2554,8 @@ const FAMILY_DATA = {
     "marriageDate": "2 Dec 1908",
     "marriagePlace": "Henry, Missouri, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Henry, Missouri"
    }
   ],
   "children": [
@@ -3120,62 +2566,26 @@ const FAMILY_DATA = {
   "note": "Recorded on her 1912 Hamburg passenger manifest under the name Tekiena, with 'Anna' used afterward. Maiden name Michaluk; remembered in family stories under a different spelling, 'Mehawik.'",
   "residences": [
    {
-    "date": "1920",
-    "place": "Harrison Ward 1, Hudson, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Harrison, New Jersey",
+    "key": "harrison"
    },
    {
-    "date": "1930",
-    "place": "Newark (Districts 1-250), Newark, Essex, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "endYear": 1950,
+    "place": "Newark, New Jersey",
+    "key": "newark"
    },
    {
-    "date": "1935",
-    "place": "Newark, Essex, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Newark, Essex, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
-   },
-   {
-    "date": "1941",
-    "place": "Newark, New Jersey, USA",
-    "year": 1941,
-    "endDate": "1941",
-    "endYear": 1941
-   },
-   {
-    "date": "1950",
-    "place": "Newark, Essex, New Jersey, USA",
-    "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
-   },
-   {
-    "date": "Before 1951",
-    "place": "New Jersey",
     "year": 1951,
-    "endDate": "Before 1951",
-    "endYear": 1951
-   },
-   {
-    "date": null,
-    "place": "Bereny",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1951,
+    "place": "New Jersey",
+    "key": "new jersey"
    }
-  ]
+  ],
+  "birthPlaceClean": "Bereniana",
+  "deathPlaceClean": null
  },
  "I252763343673": {
   "id": "I252763343673",
@@ -3197,20 +2607,15 @@ const FAMILY_DATA = {
     "marriageDate": "9 Sep 2016",
     "marriagePlace": "Holmdel Township, Monmouth, New Jersey, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Holmdel, New Jersey"
    }
   ],
   "children": [],
   "note": null,
-  "residences": [
-   {
-    "date": "2016-2020",
-    "place": null,
-    "year": 2016,
-    "endDate": "2016-2020",
-    "endYear": 2016
-   }
-  ]
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763346222": {
   "id": "I252763346222",
@@ -3230,27 +2635,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Newark (Districts 1-250), Newark, Essex, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Newark, Essex, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Newark, Essex, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Newark, New Jersey",
+    "key": "newark"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": "South Dennis, Massachusetts"
  },
  "I252763348194": {
   "id": "I252763348194",
@@ -3272,7 +2664,8 @@ const FAMILY_DATA = {
     "marriageDate": "1941",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -3283,13 +2676,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1950",
-    "place": "Elk Garden, Russell, Virginia, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Elk Garden, Virginia",
+    "key": "elk garden"
    }
-  ]
+  ],
+  "birthPlaceClean": "Virginia",
+  "deathPlaceClean": null
  },
  "I252763348195": {
   "id": "I252763348195",
@@ -3313,7 +2707,8 @@ const FAMILY_DATA = {
     "marriageDate": "1941",
     "marriagePlace": null,
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -3324,20 +2719,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1950",
-    "place": "Elk Garden, Russell, Virginia, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
-   },
-   {
-    "date": null,
-    "place": "Elk Garden, Russell, Virginia",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1950,
+    "place": "Elk Garden, Virginia",
+    "key": "elk garden"
    }
-  ]
+  ],
+  "birthPlaceClean": "Virginia",
+  "deathPlaceClean": null
  },
  "I252763348271": {
   "id": "I252763348271",
@@ -3357,13 +2746,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1950",
-    "place": "Elk Garden, Russell, Virginia, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Elk Garden, Virginia",
+    "key": "elk garden"
    }
-  ]
+  ],
+  "birthPlaceClean": "Virginia",
+  "deathPlaceClean": null
  },
  "I252763348272": {
   "id": "I252763348272",
@@ -3383,13 +2773,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1950",
-    "place": "Elk Garden, Russell, Virginia, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Elk Garden, Virginia",
+    "key": "elk garden"
    }
-  ]
+  ],
+  "birthPlaceClean": "Virginia",
+  "deathPlaceClean": null
  },
  "I252763348450": {
   "id": "I252763348450",
@@ -3407,7 +2798,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763348451": {
   "id": "I252763348451",
@@ -3425,7 +2818,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763348452": {
   "id": "I252763348452",
@@ -3452,7 +2847,9 @@ const FAMILY_DATA = {
   ],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763348453": {
   "id": "I252763348453",
@@ -3470,7 +2867,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763350342": {
   "id": "I252763350342",
@@ -3499,7 +2898,9 @@ const FAMILY_DATA = {
    "I252763327746"
   ],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763350343": {
   "id": "I252763350343",
@@ -3528,7 +2929,9 @@ const FAMILY_DATA = {
    "I252763327746"
   ],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763350608": {
   "id": "I252763350608",
@@ -3550,7 +2953,8 @@ const FAMILY_DATA = {
     "marriageDate": "6 Apr 1913",
     "marriagePlace": null,
     "uncertain": true,
-    "altDate": "30 Oct 1917"
+    "altDate": "30 Oct 1917",
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -3560,7 +2964,9 @@ const FAMILY_DATA = {
    "I252763350609"
   ],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Poland",
+  "deathPlaceClean": "Falconer, New York"
  },
  "I252763350609": {
   "id": "I252763350609",
@@ -3578,7 +2984,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Ellington, New York",
+  "deathPlaceClean": "Reedsville, West Virginia"
  },
  "I252763350610": {
   "id": "I252763350610",
@@ -3596,7 +3004,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": "Hall, Georgia"
  },
  "I252763350611": {
   "id": "I252763350611",
@@ -3614,7 +3024,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": "Neptune City, New Jersey"
  },
  "I252763350612": {
   "id": "I252763350612",
@@ -3632,7 +3044,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": null
  },
  "I252763571032": {
   "id": "I252763571032",
@@ -3650,7 +3064,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": null
  },
  "I252763571033": {
   "id": "I252763571033",
@@ -3668,7 +3084,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": null
  },
  "I252763571035": {
   "id": "I252763571035",
@@ -3686,7 +3104,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": null
  },
  "I252763571036": {
   "id": "I252763571036",
@@ -3704,7 +3124,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": null
  },
  "I252763571037": {
   "id": "I252763571037",
@@ -3722,7 +3144,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": null
  },
  "I252763571038": {
   "id": "I252763571038",
@@ -3744,7 +3168,8 @@ const FAMILY_DATA = {
     "marriageDate": "09 Jul 1842",
     "marriagePlace": "Clinton County, Ohio, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Ohio"
    }
   ],
   "children": [
@@ -3755,7 +3180,9 @@ const FAMILY_DATA = {
    "I252763571035"
   ],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  },
  "I252763571039": {
   "id": "I252763571039",
@@ -3779,7 +3206,8 @@ const FAMILY_DATA = {
     "marriageDate": "09 Jul 1842",
     "marriagePlace": "Clinton County, Ohio, USA",
     "uncertain": false,
-    "altDate": null
+    "altDate": null,
+    "marriagePlaceClean": "Ohio"
    },
    {
     "spouseId": null,
@@ -3799,7 +3227,9 @@ const FAMILY_DATA = {
    "I252763571037"
   ],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Ohio",
+  "deathPlaceClean": "Tipton, Indiana"
  },
  "I252763571040": {
   "id": "I252763571040",
@@ -3819,13 +3249,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1880",
-    "place": "Monroe, Carroll, Indiana, USA",
     "year": 1880,
-    "endDate": "1880",
-    "endYear": 1880
+    "endYear": 1880,
+    "place": "Monroe, Indiana",
+    "key": "monroe"
    }
-  ]
+  ],
+  "birthPlaceClean": "Indiana",
+  "deathPlaceClean": null
  },
  "I252763574064": {
   "id": "I252763574064",
@@ -3847,7 +3278,8 @@ const FAMILY_DATA = {
     "marriageDate": "1877",
     "marriagePlace": null,
     "uncertain": true,
-    "altDate": "17 Dec 1885"
+    "altDate": "17 Dec 1885",
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -3861,13 +3293,15 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1917,
+    "place": "Clinton, Missouri",
+    "key": "clinton",
+    "toDeath": true
    }
-  ]
+  ],
+  "birthPlaceClean": "Ohio",
+  "deathPlaceClean": "Clinton, Missouri"
  },
  "I252763574065": {
   "id": "I252763574065",
@@ -3891,7 +3325,8 @@ const FAMILY_DATA = {
     "marriageDate": "1877",
     "marriagePlace": null,
     "uncertain": true,
-    "altDate": "17 Dec 1885"
+    "altDate": "17 Dec 1885",
+    "marriagePlaceClean": null
    }
   ],
   "children": [
@@ -3905,13 +3340,15 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1935,
+    "place": "Clinton, Missouri",
+    "key": "clinton",
+    "toDeath": true
    }
-  ]
+  ],
+  "birthPlaceClean": "Hanover",
+  "deathPlaceClean": "Clinton, Missouri"
  },
  "I252763574231": {
   "id": "I252763574231",
@@ -3931,13 +3368,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    }
-  ]
+  ],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": null
  },
  "I252763574232": {
   "id": "I252763574232",
@@ -3957,13 +3395,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    }
-  ]
+  ],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": null
  },
  "I252763574233": {
   "id": "I252763574233",
@@ -3983,13 +3422,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1900",
-    "place": "Clinton, Henry, Missouri, USA",
     "year": 1900,
-    "endDate": "1900",
-    "endYear": 1900
+    "endYear": 1900,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    }
-  ]
+  ],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": null
  },
  "I252763574347": {
   "id": "I252763574347",
@@ -4007,7 +3447,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": null
  },
  "I252763574348": {
   "id": "I252763574348",
@@ -4025,7 +3467,9 @@ const FAMILY_DATA = {
   "spouses": [],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": null
  },
  "I252766481146": {
   "id": "I252766481146",
@@ -4045,34 +3489,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1920",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1930",
-    "place": "Atlantic Highlands, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Atlantic Highlands, Monmouth, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": null
  },
  "I252766481147": {
   "id": "I252766481147",
@@ -4092,34 +3522,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1920",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1930",
-    "place": "Atlantic Highlands, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Atlantic Highlands, Monmouth, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": null
  },
  "I252766481148": {
   "id": "I252766481148",
@@ -4139,27 +3555,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Atlantic Highlands, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Atlantic Highlands, Monmouth, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": null
  },
  "I252766481149": {
   "id": "I252766481149",
@@ -4179,27 +3582,14 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Atlantic Highlands, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
-   },
-   {
-    "date": "1935",
-    "place": "Atlantic Highlands, Monmouth, New Jersey",
-    "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
-   },
-   {
-    "date": "1940",
-    "place": "Atlantic Highlands, Monmouth, New Jersey, USA",
-    "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
    }
-  ]
+  ],
+  "birthPlaceClean": "New Jersey",
+  "deathPlaceClean": null
  },
  "I252766481150": {
   "id": "I252766481150",
@@ -4233,20 +3623,20 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1920",
-    "place": "Middletown, Monmouth, New Jersey, USA",
     "year": 1920,
-    "endDate": "1920",
-    "endYear": 1920
+    "endYear": 1920,
+    "place": "Middletown, New Jersey",
+    "key": "middletown"
    },
    {
-    "date": "1930",
-    "place": "Atlantic Highlands, Middletown, Monmouth, New Jersey, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "endYear": 1930,
+    "place": "Atlantic Highlands, New Jersey",
+    "key": "atlantic highlands"
    }
-  ]
+  ],
+  "birthPlaceClean": "Ireland",
+  "deathPlaceClean": null
  },
  "I252766481277": {
   "id": "I252766481277",
@@ -4278,48 +3668,38 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Clinton, Clinton, Henry, Missouri, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "endYear": 1930,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    },
    {
-    "date": "1935",
-    "place": "Detroit, Wayne, Michigan",
     "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
+    "endYear": 1935,
+    "place": "Detroit, Michigan",
+    "key": "detroit"
    },
    {
-    "date": "1940",
-    "place": "Royal Oak, Oakland, Michigan, USA",
     "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Royal Oak, Michigan",
+    "key": "royal oak"
    },
    {
-    "date": "1941",
-    "place": "Springfield, Missouri, USA",
     "year": 1941,
-    "endDate": "1941",
-    "endYear": 1941
+    "endYear": 1941,
+    "place": "Springfield, Missouri",
+    "key": "springfield"
    },
    {
-    "date": "1950",
-    "place": "Royal Oak, Oakland, Michigan, USA",
     "year": 1950,
-    "endDate": "1950",
-    "endYear": 1950
-   },
-   {
-    "date": null,
-    "place": "Clinton",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1950,
+    "place": "Royal Oak, Michigan",
+    "key": "royal oak"
    }
-  ]
+  ],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": null
  },
  "I252766481278": {
   "id": "I252766481278",
@@ -4339,27 +3719,26 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Clinton, Clinton, Henry, Missouri, USA",
-    "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "year": 1927,
+    "endYear": 1930,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    },
    {
-    "date": "1935",
-    "place": "Detroit, Wayne, Michigan",
     "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
+    "endYear": 1935,
+    "place": "Detroit, Michigan",
+    "key": "detroit"
    },
    {
-    "date": "1940",
-    "place": "Royal Oak, Oakland, Michigan, USA",
     "year": 1940,
-    "endDate": "1940",
-    "endYear": 1940
+    "endYear": 1940,
+    "place": "Royal Oak, Michigan",
+    "key": "royal oak"
    }
-  ]
+  ],
+  "birthPlaceClean": "Clinton, Missouri",
+  "deathPlaceClean": "Pontiac, Michigan"
  },
  "I252766481279": {
   "id": "I252766481279",
@@ -4379,41 +3758,32 @@ const FAMILY_DATA = {
   "note": null,
   "residences": [
    {
-    "date": "1930",
-    "place": "Clinton, Clinton, Henry, Missouri, USA",
     "year": 1930,
-    "endDate": "1930",
-    "endYear": 1930
+    "endYear": 1930,
+    "place": "Clinton, Missouri",
+    "key": "clinton"
    },
    {
-    "date": "1935",
-    "place": "Detroit, Wayne, Michigan",
     "year": 1935,
-    "endDate": "1935",
-    "endYear": 1935
+    "endYear": 1935,
+    "place": "Detroit, Michigan",
+    "key": "detroit"
    },
    {
-    "date": "1940",
-    "place": "Royal Oak, Oakland, Michigan, USA",
     "year": 1940,
-    "endDate": "1950",
-    "endYear": 1950
+    "endYear": 1950,
+    "place": "Royal Oak, Michigan",
+    "key": "royal oak"
    },
    {
-    "date": "Abt 1956",
-    "place": "Detroit",
     "year": 1956,
-    "endDate": "Abt 1956",
-    "endYear": 1956
-   },
-   {
-    "date": null,
-    "place": "Royal Oak, Oakland, Michigan",
-    "year": null,
-    "endDate": null,
-    "endYear": null
+    "endYear": 1956,
+    "place": "Detroit",
+    "key": "detroit"
    }
-  ]
+  ],
+  "birthPlaceClean": "Missouri",
+  "deathPlaceClean": null
  },
  "I_NEW_EDWARD_BARNES": {
   "id": "I_NEW_EDWARD_BARNES",
@@ -4440,7 +3810,9 @@ const FAMILY_DATA = {
   ],
   "children": [],
   "note": null,
-  "residences": []
+  "residences": [],
+  "birthPlaceClean": null,
+  "deathPlaceClean": null
  }
 },
   families: {
@@ -4464,7 +3836,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "6 Feb 1873",
-    "plac": "Daviess, Missouri, USA"
+    "plac": "Daviess, Missouri, USA",
+    "placClean": "Daviess, Missouri"
    }
   ],
   "note": null
@@ -4500,7 +3873,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "09 Jul 1842",
-    "plac": "Clinton County, Ohio, USA"
+    "plac": "Clinton County, Ohio, USA",
+    "placClean": "Ohio"
    }
   ],
   "note": null
@@ -4530,7 +3904,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "1914",
-    "plac": "New Jersey, USA"
+    "plac": "New Jersey, USA",
+    "placClean": "New Jersey"
    }
   ],
   "note": null
@@ -4558,7 +3933,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "2 Dec 1908",
-    "plac": "Henry, Missouri, USA"
+    "plac": "Henry, Missouri, USA",
+    "placClean": "Henry, Missouri"
    }
   ],
   "note": "Marriage date and place (2 Dec 1908, Henry, Missouri) came from the official Ancestry chart export, not the GEDCOM file, which had no marriage record for this couple at all."
@@ -4587,7 +3963,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "2 July 1944",
-    "plac": "Navesink, New Jersey, USA"
+    "plac": "Navesink, New Jersey, USA",
+    "placClean": "Navesink, New Jersey"
    }
   ],
   "note": null
@@ -4603,7 +3980,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "2 Dec 1908",
-    "plac": "Henry, Missouri, USA"
+    "plac": "Henry, Missouri, USA",
+    "placClean": "Henry, Missouri"
    }
   ],
   "note": null
@@ -4616,7 +3994,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "9 Sep 2016",
-    "plac": "Holmdel Township, Monmouth, New Jersey, USA"
+    "plac": "Holmdel Township, Monmouth, New Jersey, USA",
+    "placClean": "Holmdel, New Jersey"
    }
   ],
   "note": null
@@ -4720,7 +4099,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "9 Dec 1883",
-    "plac": "Oceanport, Monmouth, New Jersey"
+    "plac": "Oceanport, Monmouth, New Jersey",
+    "placClean": "Oceanport, New Jersey"
    }
   ],
   "note": null
@@ -4758,7 +4138,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "3 May 1945",
-    "plac": "Coeur d'Alene, Kootenai, Idaho, USA"
+    "plac": "Coeur d'Alene, Kootenai, Idaho, USA",
+    "placClean": "Coeur d'Alene, Idaho"
    }
   ],
   "note": null
@@ -4777,7 +4158,8 @@ const FAMILY_DATA = {
   "marr": [
    {
     "date": "29 Aug 1911",
-    "plac": "Duncan Home, Red Bank, NJ"
+    "plac": "Duncan Home, Red Bank, NJ",
+    "placClean": "Red Bank, New Jersey"
    }
   ],
   "note": null
