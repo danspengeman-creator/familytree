@@ -94,10 +94,81 @@
     return n + (s[(v - 20) % 10] || s[v] || s[0]);
   }
 
+  function idsAlongPath(fromId, path) {
+    const ids = [fromId];
+    let cur = fromId;
+    for (const step of path) {
+      const p = person(cur);
+      cur = step === "f" ? p.father : p.mother;
+      ids.push(cur);
+    }
+    return ids;
+  }
+
+  function chainToAncestor(fromId, ancId) {
+    const path = findPathDown(fromId, ancId);
+    if (!path) return null;
+    return idsAlongPath(fromId, path);
+  }
+
+  function chainNames(ids) {
+    return ids.map(id => fullName(person(id)));
+  }
+
   const DANIEL_ANCESTORS = ancestorDistances(ROOT_ID);
 
+  function cousinExplanation(targetId, ancId, A, B) {
+    const ancName = fullName(person(ancId));
+    const targetName = fullName(person(targetId));
+    const danielChain = chainNames(chainToAncestor(ROOT_ID, ancId));
+    const targetChain = chainNames(chainToAncestor(targetId, ancId));
+    const degree = Math.min(A, B) - 1;
+    const removed = Math.abs(A - B);
+    let text = `Daniel and ${targetName} aren't directly descended from one another, but they share a common ancestor: ${ancName}. `;
+    text += `Daniel's line back to ${ancName}: ${danielChain.join(" \u2192 ")}. `;
+    text += `${targetName}'s line back to ${ancName}: ${targetChain.join(" \u2192 ")}. `;
+    if (removed === 0) {
+      text += `Both lines reach ${ancName} in ${A} step${A > 1 ? "s" : ""}, and matching distances like that are what make two people "${ordinal(degree)} cousins" rather than something more removed.`;
+    } else {
+      const closerName = A < B ? "Daniel" : targetName;
+      const fartherName = A < B ? targetName : "Daniel";
+      text += `Daniel is ${A} step${A > 1 ? "s" : ""} from ${ancName}, while ${targetName} is ${B} step${B > 1 ? "s" : ""} from ${ancName}. `;
+      text += `The smaller of those two numbers, minus one, sets the cousin "degree" (here, ${ordinal(degree)} cousins). The gap between the two numbers, ${removed}, is the "${removed === 1 ? "once" : removed === 2 ? "twice" : ordinal(removed) + " time"} removed" part: it just means ${fartherName} is ${removed} generation${removed > 1 ? "s" : ""} further from ${ancName} than ${closerName} is, so they fall on different generational "rungs" of the same family branch.`;
+    }
+    return text;
+  }
+
+  function auntUncleExplanation(targetId, ancId, A, B, label) {
+    const ancName = fullName(person(ancId));
+    const targetName = fullName(person(targetId));
+    if (B === 1) {
+      // target is a direct child of ancId; the sibling-of-target sits in Daniel's own chain
+      const chain = chainToAncestor(ROOT_ID, ancId);
+      const siblingId = chain[chain.length - 2];
+      const siblingName = fullName(person(siblingId));
+      const siblingPath = findPathDown(ROOT_ID, siblingId);
+      const siblingRel = relationLabel(siblingPath);
+      return `${siblingName} and ${targetName} are brother and sister, both children of ${ancName}. ${siblingName} is Daniel's ${siblingRel}, and since ${targetName} is ${siblingName}'s sibling, that makes ${targetName} Daniel's ${label.replace(/^Daniel's /, "")}.`;
+    }
+    const chain = chainToAncestor(targetId, ancId);
+    const siblingId = chain[chain.length - 2];
+    const siblingName = fullName(person(siblingId));
+    const targetSubPath = findPathDown(targetId, siblingId);
+    const targetRel = relationLabel(targetSubPath);
+    return `Daniel and ${siblingName} are brother and sister, both children of ${ancName}. ${targetName} is ${siblingName}'s ${targetRel}, and because ${siblingName} is Daniel's sibling, that puts ${targetName} in the line of Daniel's ${label.replace(/^Daniel's /, "")}.`;
+  }
+
+  function halfSiblingExplanation(targetId) {
+    const dp = person(ROOT_ID), tp = person(targetId);
+    const sameFather = dp.father && dp.father === tp.father;
+    const sharedParent = fullName(person(sameFather ? dp.father : dp.mother));
+    const danielOther = fullName(person(sameFather ? dp.mother : dp.father));
+    const targetOther = fullName(person(sameFather ? tp.mother : tp.father));
+    return `Daniel and ${fullName(tp)} share ${sameFather ? "the same father" : "the same mother"}, ${sharedParent}, but have different ${sameFather ? "mothers" : "fathers"}: Daniel's is ${danielOther}, ${fullName(tp)}'s is ${targetOther}. Sharing only one parent instead of both is what makes them half-siblings rather than full siblings.`;
+  }
+
   function bloodRelationToDaniel(targetId) {
-    if (targetId === ROOT_ID) return "Daniel";
+    if (targetId === ROOT_ID) return { label: "Daniel", explain: null };
     const targetDist = ancestorDistances(targetId);
     let best = null;
     Object.keys(DANIEL_ANCESTORS).forEach(ancId => {
@@ -107,38 +178,44 @@
       }
     });
     if (!best) return null;
-    const { A, B } = best;
+    const { ancId, A, B } = best;
     const tp = person(targetId);
 
     if (B === 0) {
       const path = findPathDown(ROOT_ID, targetId);
-      return "Daniel's " + relationLabel(path || []);
+      return { label: "Daniel's " + relationLabel(path || []), explain: null };
     }
-    if (A === 0) return null; // Daniel has no descendants in this tree yet
+    if (A === 0) return null;
 
     if (A === 1 && B === 1) {
       const dp = person(ROOT_ID);
       const full = dp.father && dp.father === tp.father && dp.mother && dp.mother === tp.mother;
       const word = tp.sex === "M" ? "brother" : tp.sex === "F" ? "sister" : "sibling";
-      return "Daniel's " + (full ? word : "half-" + word);
+      const label = "Daniel's " + (full ? word : "half-" + word);
+      return { label, explain: full ? null : halfSiblingExplanation(targetId) };
     }
 
     const m = Math.min(A, B), n = Math.max(A, B);
     if (m === 1) {
       const level = n - 2;
       const greatPrefix = level > 0 ? "great-".repeat(level) : "";
+      let label;
       if (A < B) {
         const word = tp.sex === "M" ? "nephew" : tp.sex === "F" ? "niece" : "nephew/niece";
-        return "Daniel's " + greatPrefix + word;
+        label = "Daniel's " + greatPrefix + word;
+      } else {
+        const word = tp.sex === "M" ? "uncle" : tp.sex === "F" ? "aunt" : "aunt/uncle";
+        label = "Daniel's " + greatPrefix + word;
       }
-      const word = tp.sex === "M" ? "uncle" : tp.sex === "F" ? "aunt" : "aunt/uncle";
-      return "Daniel's " + greatPrefix + word;
+      const explain = level >= 2 ? auntUncleExplanation(targetId, ancId, A, B, label) : null;
+      return { label, explain };
     }
 
     const degree = m - 1, removed = n - m;
-    let label = ordinal(degree) + " cousin";
+    let label = "Daniel's " + ordinal(degree) + " cousin";
     if (removed > 0) label += ", " + ordinal(removed) + " removed";
-    return "Daniel's " + label;
+    const explain = (degree >= 2 || removed >= 1) ? cousinExplanation(targetId, ancId, A, B) : null;
+    return { label, explain };
   }
 
   function siblingsOf(id) {
@@ -161,11 +238,10 @@
     return "relative";
   }
 
-  function relationshipToDaniel(targetId) {
+  function relationshipDetails(targetId) {
     const direct = bloodRelationToDaniel(targetId);
     if (direct) return direct;
 
-    // BFS through spouse / parent / child / sibling edges to the nearest blood-connected relative
     const visited = new Set([targetId]);
     const queue = [[targetId, []]];
     while (queue.length) {
@@ -185,18 +261,26 @@
         const newPath = path.concat([{ type: nb.type, fromId: curId, toId: nb.id }]);
         const rel = bloodRelationToDaniel(nb.id);
         if (rel) {
-          let result = rel;
+          let label = rel.label;
           for (let i = newPath.length - 1; i >= 0; i--) {
             const hop = newPath[i];
             const earlier = person(hop.fromId);
-            result += "'s " + reverseHopWord(hop.type, earlier);
+            label += "'s " + reverseHopWord(hop.type, earlier);
           }
-          return result;
+          let explain = rel.explain;
+          if (explain) {
+            explain = `${fullName(person(targetId))} is connected by marriage rather than by blood. The relevant blood relative here is ${fullName(person(nb.id))}: ` + explain;
+          }
+          return { label, explain };
         }
         queue.push([nb.id, newPath]);
       }
     }
-    return "Related by marriage";
+    return { label: "Related by marriage", explain: null };
+  }
+
+  function relationshipToDaniel(targetId) {
+    return relationshipDetails(targetId).label;
   }
 
   // ---------- TREE VIEW ----------
@@ -493,6 +577,26 @@
       html += `</dd>`;
     }
     html += `</dl>`;
+
+    if (id !== ROOT_ID) {
+      const rel = relationshipDetails(id);
+      html += `<div class="detail-section-title">Relationship to Daniel</div>`;
+      html += `<div class="relation-line"><span class="relation-badge">${rel.label}</span>`;
+      if (rel.explain) {
+        html += `<details class="relation-explain"><summary>What does this mean?</summary><p>${rel.explain}</p></details>`;
+      }
+      html += `</div>`;
+    }
+
+    if (p.residences && p.residences.length) {
+      html += `<div class="detail-section-title">Places lived</div>`;
+      html += `<div class="residence-list">`;
+      p.residences.forEach(r => {
+        const yearLabel = r.year ? (r.endYear && r.endYear !== r.year ? r.year + "\u2013" + r.endYear : String(r.year)) : (r.date || "date unknown");
+        html += `<div class="residence-row"><span class="residence-year">${yearLabel}</span><span class="residence-place">${r.place || "place unknown"}</span></div>`;
+      });
+      html += `</div>`;
+    }
 
     if (p.spouses && p.spouses.length) {
       html += `<div class="detail-section-title">${p.spouses.length > 1 ? "Marriages" : "Marriage"}</div>`;

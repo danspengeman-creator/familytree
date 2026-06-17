@@ -573,6 +573,43 @@ main {
   line-height: 1.6;
   border-radius: 0 var(--radius) var(--radius) 0;
 }
+.relation-line { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.relation-explain {
+  font-size: 12.5px;
+  color: var(--paper-dim);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  width: 100%;
+}
+.relation-explain summary {
+  cursor: pointer;
+  color: var(--brass);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.relation-explain p {
+  margin: 10px 0 0;
+  line-height: 1.65;
+}
+
+.residence-list { display: flex; flex-direction: column; }
+.residence-row {
+  display: flex;
+  gap: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 13px;
+}
+.residence-row:last-child { border-bottom: none; }
+.residence-year {
+  flex: 0 0 auto;
+  width: 90px;
+  color: var(--brass);
+  font-weight: 500;
+}
+.residence-place { color: var(--paper-dim); }
+
 .detail-link-list { display: flex; flex-direction: column; gap: 6px; }
 .detail-link {
   font-size: 13px;
